@@ -223,6 +223,15 @@ Prefab:
       propertyPath: areaTransitionName
       value: Countryside-1
       objectReference: {fileID: 0}
+    - target: {fileID: 114969665509385208, guid: 5843d716198270246821b767411e9d29,
+        type: 2}
+      propertyPath: areaToLoad
+      value: HubLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123423118565542, guid: 5843d716198270246821b767411e9d29, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -10.17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5843d716198270246821b767411e9d29, type: 2}
   m_IsPrefabAsset: 0
