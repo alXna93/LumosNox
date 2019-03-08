@@ -13,6 +13,12 @@ public class PlayerController : MonoBehaviour {
 
     public string areaTransitionName;
 
+    private Vector3 BottomLeftLimit;
+    private Vector3 TopRightLimit;
+
+    
+
+
 	// Use this for initialization
 	void Start () {
         if (instance == null)
@@ -42,5 +48,16 @@ public class PlayerController : MonoBehaviour {
             myAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
             myAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
         }
-	}
+
+
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, BottomLeftLimit.x, TopRightLimit.x), Mathf.Clamp(transform.position.y, BottomLeftLimit.y, TopRightLimit.y), transform.position.z);
+
+    }
+
+        public void SetBounds(Vector3 botLeft, Vector3 topRight) { 
+
+            BottomLeftLimit = botLeft + new Vector3(.5f, 1f, 0f);
+            TopRightLimit = topRight + new Vector3(-.5f, -1f, 0f);
+
+        }
 }
