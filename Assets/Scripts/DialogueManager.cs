@@ -40,6 +40,8 @@ public class DialogueManager : MonoBehaviour {
                     if (currentLine >= dialogLines.Length)
                     {
                         dialogBox.SetActive(false);
+
+                        PlayerController.instance.canMove = true;
                     }
                     else
                     {
@@ -65,6 +67,9 @@ public class DialogueManager : MonoBehaviour {
         dialogText.text = dialogLines[0];
         dialogBox.SetActive(true);
         justStarted = true;
+
+        PlayerController.instance.canMove = false;
+
 
     }
 }
