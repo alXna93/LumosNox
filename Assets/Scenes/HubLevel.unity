@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -185,16 +185,16 @@ RectTransform:
   m_GameObject: {fileID: 672766707}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000025, y: 1.0000025, z: 1.0000025}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1548142125}
-  m_Father: {fileID: 1624661755}
-  m_RootOrder: 3
+  m_Father: {fileID: 1912767931}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -839.5, y: -96}
-  m_SizeDelta: {x: -1678.9, y: -807.6}
+  m_AnchoredPosition: {x: -400, y: 170.20001}
+  m_SizeDelta: {x: -800.19995, y: -217.59998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &672766709
 MonoBehaviour:
@@ -239,6 +239,9 @@ GameObject:
   m_Component:
   - component: {fileID: 887859054}
   - component: {fileID: 887859053}
+  - component: {fileID: 887859057}
+  - component: {fileID: 887859056}
+  - component: {fileID: 887859055}
   m_Layer: 0
   m_Name: NPC_0
   m_TagString: Untagged
@@ -299,12 +302,77 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 887859052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.777, y: 0.775, z: 0}
-  m_LocalScale: {x: 1.339954, y: 1.432434, z: 1}
+  m_LocalPosition: {x: 11.57, y: 3.38, z: 0}
+  m_LocalScale: {x: 1.3463378, y: 1.3515244, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &887859055
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887859052}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.056767285, y: 0.022619843}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.9375, y: 1}
+    newSize: {x: 0.9375, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.99353456, y: 1.0452397}
+  m_EdgeRadius: 0
+--- !u!61 &887859056
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887859052}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.9375, y: 1}
+    newSize: {x: 0.9375, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0
+--- !u!114 &887859057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887859052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a3a7c0e602a0d429a05ea443954edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - it works?
+  - or does it?
+  - ???
 --- !u!1 &1103605647
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,7 +522,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.3, y: -4.2}
+  m_AnchoredPosition: {x: 3, y: -4.2}
   m_SizeDelta: {x: 199.4, y: 61}
   m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!114 &1548142126
@@ -7236,7 +7304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1912767931
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7248,12 +7316,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1103605648}
+  - {fileID: 672766708}
   m_Father: {fileID: 1624661755}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -439.4, y: -295}
+  m_AnchoredPosition: {x: -439, y: -295}
   m_SizeDelta: {x: -878.7, y: -590}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1912767932
