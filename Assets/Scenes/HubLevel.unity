@@ -370,9 +370,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - it works?
-  - or does it?
-  - ???
+  - n-Custos
+  - Recognise this place?
+  - n-Player
+  - Where am i?
+  - n-Custos
+  - You are stuck in the past
+  - Demons of your past haunt you
+  - n-Player
+  - How can i get out of the past?
+  - n-Custos
+  - That is what you are here to do?
 --- !u!1 &1103605647
 GameObject:
   m_ObjectHideFlags: 0
