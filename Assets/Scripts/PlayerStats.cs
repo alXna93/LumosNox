@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerStats: MonoBehaviour {
 
+    //Player statistics
     public string playerName;
     public int playerLevel = 1;
     public int currentEXP;
@@ -15,6 +16,7 @@ public class PlayerStats: MonoBehaviour {
     public int maxHP = 100;
     public int currentPower;
     public int maxPower = 30;
+    public int[] powerLvlBonus;
     public int strength;
     public int defence;
     public int armourPower;
@@ -24,6 +26,7 @@ public class PlayerStats: MonoBehaviour {
     // Use this for initialization
     void Start () {
 
+        //
         expToNextLevel = new int[maxLevel];
         expToNextLevel[1] = startEXP;
 
@@ -37,22 +40,48 @@ public class PlayerStats: MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+		//test code for adding EXP
         if(Input.GetKeyDown(KeyCode.E))
         {
-            AddExp(500);
+            AddExp(1000);
         }
 	}
 
+    //exp to add to player
     public void AddExp(int expToAdd)
     {
         currentEXP += expToAdd;
 
-        if (currentEXP > expToNextLevel[playerLevel])
+        if (playerLevel < maxLevel)
         {
-            currentEXP -= expToNextLevel[playerLevel];
+            if (currentEXP > expToNextLevel[playerLevel])
+            {
+                currentEXP -= expToNextLevel[playerLevel];
 
-            playerLevel++;
+                playerLevel++;
+
+                // Check whether to add to strength and defennce based on odd or even
+                if (playerLevel % 2 == 0)
+                {
+                    strength++;
+                }
+                else
+                {
+                    defence++;
+                }
+
+                maxHP = Mathf.FloorToInt(maxHP * 1.50f);
+                currentHP = maxHP;
+
+                maxPower += powerLvlBonus[playerLevel];
+                currentPower = maxPower;
+            }
         }
+
+        if(playerLevel >= maxLevel)
+          {
+            currentEXP = 0;
+          }
     }
 }
