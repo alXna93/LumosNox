@@ -42,19 +42,24 @@ public class PlayerStats: MonoBehaviour {
 	void Update () {
 
 		//test code for adding EXP
-        if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.E) && playerLevel < maxLevel)
         {
             AddExp(1000);
+
         }
-	}
+        else if(playerLevel >= maxLevel)
+        {
+            currentEXP = 0;
+        }
+    }
 
     //exp to add to player
     public void AddExp(int expToAdd)
     {
         currentEXP += expToAdd;
-
         if (playerLevel < maxLevel)
         {
+           
             if (currentEXP > expToNextLevel[playerLevel])
             {
                 currentEXP -= expToNextLevel[playerLevel];
@@ -71,17 +76,14 @@ public class PlayerStats: MonoBehaviour {
                     defence++;
                 }
 
-                maxHP = Mathf.FloorToInt(maxHP * 1.50f);
+                maxHP = Mathf.FloorToInt(maxHP * 1.05f);
                 currentHP = maxHP;
 
-                maxPower += powerLvlBonus[playerLevel];
-                currentPower = maxPower;
+                //maxPower += powerLvlBonus[playerLevel];
+                //currentPower = maxPower;
             }
         }
 
-        if(playerLevel >= maxLevel)
-          {
-            currentEXP = 0;
-          }
+       
     }
 }
