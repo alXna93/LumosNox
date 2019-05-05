@@ -66,7 +66,7 @@ public class PlayerStats: MonoBehaviour {
 
                 playerLevel++;
 
-                // Check whether to add to strength and defennce based on odd or even
+                // Check whether to add to strength and defence based on odd or even
                 if (playerLevel % 2 == 0)
                 {
                     strength++;
@@ -79,6 +79,7 @@ public class PlayerStats: MonoBehaviour {
                 maxHP = Mathf.FloorToInt(maxHP * 1.05f);
                 currentHP = maxHP;
 
+              
                 //maxPower += powerLvlBonus[playerLevel];
                 //currentPower = maxPower;
             }
