@@ -41,7 +41,7 @@ public class DialogueManager : MonoBehaviour {
                     {
                         dialogBox.SetActive(false);
 
-                        PlayerController.instance.canMove = true;
+                        GameManager.instance.dialogActive = false;
                     }
                     else
                     {
@@ -71,7 +71,7 @@ public class DialogueManager : MonoBehaviour {
         dialogBox.SetActive(true);
         justStarted = true;
 
-        PlayerController.instance.canMove = false;
+        GameManager.instance.dialogActive = true;
 
         nameBox.SetActive(isPerson);
 

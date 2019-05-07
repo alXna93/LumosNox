@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour {
 
     public PlayerStats[] playerStats;
 
+    public bool gameMenuOpen, dialogActive, fadingBetweenScenes;
+    
+
 	// Use this for initialization
 	void Start () {
 
@@ -19,6 +22,12 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(gameMenuOpen || dialogActive || fadingBetweenScenes)
+        {
+            PlayerController.instance.canMove = false;
+        } else
+        {
+            PlayerController.instance.canMove = true;
+        }
 	}
 }
