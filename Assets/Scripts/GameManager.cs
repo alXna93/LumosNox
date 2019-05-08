@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager instance;
 
-    public PlayerStats[] playerStats;
+    public PlayerStats charStats;
 
     public bool gameMenuOpen, dialogActive, fadingBetweenScenes;
     

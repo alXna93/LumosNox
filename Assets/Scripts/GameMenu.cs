@@ -7,16 +7,15 @@ public class GameMenu : MonoBehaviour {
 
 
     public GameObject theMenu;
+    private PlayerStats charStats;
 
-    private PlayerStats[] playerStats;
+    public Text nameText, hpText, mpText, lvlText, expText;
+    public Slider expSlider;
+    public Image playerImage;
+    public GameObject playerStatHolder;
 
-    //public Text[] nameText, hpText, mpText, lvlText, expText;
-    //public Slider[] expSlider;
-    //public Image[] playerImage;
-    //public GameObject[] playerStatHolder;
-
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -39,28 +38,25 @@ public class GameMenu : MonoBehaviour {
 
     public void UpdateMainStats()
     {
-        playerStats = GameManager.instance.playerStats;
+        charStats = GameManager.instance.charStats;
+     
+            if (charStats.gameObject.activeInHierarchy)
+            {
+                playerStatHolder.SetActive(true);
+                nameText.text = charStats.playerName;
+                hpText.text = "Health: " + charStats.currentHP + "/" + charStats.maxHP;
+                mpText.text = "Power: " + charStats.currentPower + "/" + charStats.maxPower;
+                lvlText.text = "Level: " + charStats.playerLevel;
+                expText.text = charStats.currentEXP + "/" + charStats.expToNextLevel[charStats.playerLevel];
+                expSlider.maxValue = charStats.expToNextLevel[charStats.playerLevel];
+                expSlider.value = charStats.currentEXP;
+                playerImage.sprite = charStats.playerImage;
 
-        //for(int i = 0; i < playerStats.Length; i++)
-        //{
-        //    if (playerStats[i].gameObject.activeInHierarchy)
-        //    {
-        //        playerStatHolder[i].SetActive(true);
-
-        //        nameText[i].text = playerStats[i].playerName;
-        //        hpText[i].text = "Health: " + playerStats[i].currentHP + "/" + playerStats[i].maxHP;
-        //        mpText[i].text = "Power: " + playerStats[i].currentPower + "/" + playerStats[i].maxPower;
-        //        lvlText[i].text = "Level: " + playerStats[i].playerLevel;
-        //        expText[i].text = playerStats[i].currentEXP + "/" + playerStats[i].expToNextLevel[playerStats[i].playerLevel];
-        //        expSlider[i].maxValue = playerStats[i].expToNextLevel[playerStats[i].playerLevel];
-        //        expSlider[i].value = playerStats[i].currentEXP;
-        //        playerImage[i].sprite = playerStats[i].playerImage;
-
-        //    }else
-        //    {
-        //        playerStatHolder[i].SetActive(false);
-
-        //    }
-        //}
+            }
+            else
+            {
+                playerStatHolder.SetActive(false);
+            }
+        
     }
 }
