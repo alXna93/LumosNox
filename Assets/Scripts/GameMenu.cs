@@ -47,11 +47,10 @@ public class GameMenu : MonoBehaviour {
                 hpText.text = "Health: " + charStats.currentHP + "/" + charStats.maxHP;
                 mpText.text = "Power: " + charStats.currentPower + "/" + charStats.maxPower;
                 lvlText.text = "Level: " + charStats.playerLevel;
-                expText.text = charStats.currentEXP + "/" + charStats.expToNextLevel[charStats.playerLevel];
+                expText.text = "" + charStats.currentEXP + "/" + charStats.expToNextLevel[charStats.playerLevel];
                 expSlider.maxValue = charStats.expToNextLevel[charStats.playerLevel];
                 expSlider.value = charStats.currentEXP;
                 playerImage.sprite = charStats.playerImage;
-
             }
             else
             {
