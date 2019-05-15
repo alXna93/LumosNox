@@ -1,19 +1,58 @@
 fileFormatVersion: 2
-guid: 9dac92f8381094f4d9b0366d460b0549
+guid: e1b5cf4a5ab4f9243b20f3b9a770031a
 TextureImporter:
   fileIDToRecycleName:
-    21300000: depressionSprites_3
-    21300002: depressionSprites_4
-    21300004: depressionSprites_6
-    21300006: depressionSprites_12
-    21300008: depressionSprites_13
-    21300010: depressionSprites_14
-    21300012: depressionSprites_21
-    21300014: depressionSprites_22
-    21300016: depressionSprites_23
-    21300018: depressionSprites_30
-    21300020: depressionSprites_31
-    21300022: depressionSprites_32
+    21300000: playerWithSword_0
+    21300002: playerWithSword_1
+    21300004: playerWithSword_2
+    21300006: playerWithSword_3
+    21300008: playerWithSword_4
+    21300010: playerWithSword_5
+    21300012: playerWithSword_6
+    21300014: playerWithSword_7
+    21300016: playerWithSword_8
+    21300018: playerWithSword_9
+    21300020: playerWithSword_10
+    21300022: playerWithSword_11
+    21300024: playerWithSword_12
+    21300026: playerWithSword_13
+    21300028: playerWithSword_14
+    21300030: playerWithSword_15
+    21300032: playerWithSword_16
+    21300034: playerWithSword_17
+    21300036: playerWithSword_18
+    21300038: playerWithSword_19
+    21300040: playerWithSword_20
+    21300042: playerWithSword_21
+    21300044: playerWithSword_22
+    21300046: playerWithSword_23
+    21300048: playerWithSword_24
+    21300050: playerWithSword_25
+    21300052: playerWithSword_26
+    21300054: playerWithSword_27
+    21300056: playerWithSword_28
+    21300058: playerWithSword_29
+    21300060: playerWithSword_30
+    21300062: playerWithSword_31
+    21300064: playerWithSword_32
+    21300066: playerWithSword_33
+    21300068: playerWithSword_34
+    21300070: playerWithSword_35
+    21300072: playerWithSword_36
+    21300074: playerWithSword_37
+    21300076: playerWithSword_38
+    21300078: playerWithSword_39
+    21300080: playerWithSword_40
+    21300082: playerWithSword_41
+    21300084: playerWithSword_42
+    21300086: playerWithSword_43
+    21300088: playerWithSword_44
+    21300090: playerWithSword_45
+    21300092: playerWithSword_46
+    21300094: playerWithSword_47
+    21300096: playerWithSword_48
+    21300098: playerWithSword_49
+    21300100: playerWithSword_50
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -151,241 +190,181 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: depressionSprites_3
+      name: playerWithSword_1
       rect:
         serializedVersion: 2
-        x: 152
-        y: 144
-        width: 31
-        height: 44
+        x: 58
+        y: 320
+        width: 63
+        height: 61
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30a28bf9689138545a7f64de80392ffa
+      spriteID: 5104664b24d36c2498b73ab1ea411530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: depressionSprites_4
+      name: playerWithSword_3
       rect:
         serializedVersion: 2
-        x: 200
-        y: 144
-        width: 31
-        height: 45
+        x: 202
+        y: 321
+        width: 68
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61187e7d2d1617d4087462eeecfdfe91
+      spriteID: 1739d8fe238a1984bb09c2996b984584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: depressionSprites_6
+      name: playerWithSword_4
       rect:
         serializedVersion: 2
-        x: 248
-        y: 144
-        width: 31
-        height: 44
+        x: 305
+        y: 320
+        width: 71
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a204ffed34efad943a150577a7bb78e4
+      spriteID: 87b997a7e6117e342b506fe3e5c45d3b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: depressionSprites_12
+      name: playerWithSword_5
       rect:
         serializedVersion: 2
-        x: 153
-        y: 96
-        width: 31
-        height: 43
+        x: 498
+        y: 320
+        width: 74
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15c49f63858e4f64ab4e3f325a0e49fc
+      spriteID: d158066f9297b934fb88d9f80ae6e038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: depressionSprites_13
+      name: playerWithSword_7
       rect:
         serializedVersion: 2
-        x: 201
-        y: 96
-        width: 31
-        height: 44
+        x: 56
+        y: 256
+        width: 64
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 879e233628d152d4a91ecb9d17b58e00
+      spriteID: e49e23e7ae2890b4188030c6186f67ad
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: depressionSprites_14
+      name: playerWithSword_11
       rect:
         serializedVersion: 2
-        x: 249
-        y: 96
-        width: 31
-        height: 43
+        x: 311
+        y: 256
+        width: 65
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a52845ea82d8b04cae7e1559c9337d7
+      spriteID: 57e40e2741857d24784ad8991bc0037f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: depressionSprites_21
+      name: playerWithSword_14
       rect:
         serializedVersion: 2
-        x: 152
-        y: 48
-        width: 31
-        height: 43
+        x: 519
+        y: 258
+        width: 49
+        height: 61
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5161cc14e34d00f4697dbab3b19208b7
+      spriteID: e6185f399a83b60449295becd23d97ea
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: depressionSprites_22
+      name: playerWithSword_41
       rect:
         serializedVersion: 2
-        x: 200
-        y: 48
-        width: 31
-        height: 44
+        x: 523
+        y: 64
+        width: 45
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 369be86954c931741ba13947f0ebaa4d
+      spriteID: 99a1f74645c36db4ea69ddf1070f57dd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: depressionSprites_23
+      name: playerWithSword_50
       rect:
         serializedVersion: 2
-        x: 248
-        y: 48
-        width: 31
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6a3887f95bfd684da90c636230cbc63
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: depressionSprites_30
-      rect:
-        serializedVersion: 2
-        x: 152
+        x: 512
         y: 0
-        width: 31
-        height: 44
+        width: 61
+        height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a1d8e92bb3fd57459adb02931f1f820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: depressionSprites_31
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 0
-        width: 31
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8b3b16f7c8477647a8f4f832697c005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: depressionSprites_32
-      rect:
-        serializedVersion: 2
-        x: 248
-        y: 0
-        width: 31
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e138938d1ab7d94ab917576588f5b3b
+      spriteID: 0b23696b180e8b6469ce8846145fe1a8
       vertices: []
       indices: 
       edges: []
@@ -393,7 +372,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a7298ac0546206946bc2b9355310c346
+    spriteID: 146460da8c5c52d4e84e17b692db51a8
     vertices: []
     indices: 
     edges: []
