@@ -83,11 +83,12 @@ public class PlayerController : MonoBehaviour {
         isAttacking = true;
         yield return null;
         myAnim.SetBool("Attacking", false);
-        yield return new WaitForSeconds(.3f);
+        yield return new WaitForSeconds(.1f);
         isAttacking = false;
     }
 
-        public void SetBounds(Vector3 botLeft, Vector3 topRight) { 
+        public void SetBounds(
+            Vector3 botLeft, Vector3 topRight) { 
 
             BottomLeftLimit = botLeft + new Vector3(.5f, 1f, 0f);
             TopRightLimit = topRight + new Vector3(-.5f, -1f, 0f);
