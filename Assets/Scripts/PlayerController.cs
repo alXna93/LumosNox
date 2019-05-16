@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour {
     private Vector3 TopRightLimit;
 
     public bool canMove = true;
-
+    public bool isAttacking = false;
    
 
 	// Use this for initialization
@@ -64,9 +64,27 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
+        if (Input.GetButtonDown("attack") && isAttacking != true)
+        {
+
+            StartCoroutine(AttackCo());
+        }
+
+        
+
 
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, BottomLeftLimit.x, TopRightLimit.x), Mathf.Clamp(transform.position.y, BottomLeftLimit.y, TopRightLimit.y), transform.position.z);
 
+    }
+
+    private IEnumerator AttackCo()
+    {
+        myAnim.SetBool("Attacking", true);
+        isAttacking = true;
+        yield return null;
+        myAnim.SetBool("Attacking", false);
+        yield return new WaitForSeconds(.3f);
+        isAttacking = false;
     }
 
         public void SetBounds(Vector3 botLeft, Vector3 topRight) { 
