@@ -151,67 +151,7 @@ TextureImporter:
       name: playerWithSwordRight_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 320
-        width: 74
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72b0200f56891004cb47bbfca73f509e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerWithSwordRight_1
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 320
-        width: 71
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b01eaca9e528214da0a0d111ce1b447
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerWithSwordRight_2
-      rect:
-        serializedVersion: 2
-        x: 306
-        y: 321
-        width: 68
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd211dbcfac030f40b7c4898f65193f6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerWithSwordRight_3
-      rect:
-        serializedVersion: 2
-        x: 455
+        x: 58
         y: 320
         width: 63
         height: 61
@@ -222,7 +162,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 716d425d4a4ea7f45bd369e4dd9b3e18
+      spriteID: a5c92c2cac4bba94cb863caec0b3a622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerWithSwordRight_1
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 321
+        width: 68
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27876a5e028be3e449ff88ec604181b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerWithSwordRight_2
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 321
+        width: 71
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be785b2f2016bfc4281e9531c0d9257d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerWithSwordRight_3
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 320
+        width: 74
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9808d4e9228d040a54f080a4515fd2
       vertices: []
       indices: 
       edges: []
@@ -231,7 +231,7 @@ TextureImporter:
       name: playerWithSwordRight_4
       rect:
         serializedVersion: 2
-        x: 200
+        x: 311
         y: 256
         width: 65
         height: 60
@@ -242,7 +242,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80aafa7b4eae0434ebaea2579ff9f255
+      spriteID: cd665f65873245c4a943d905949d15ea
       vertices: []
       indices: 
       edges: []
@@ -251,7 +251,7 @@ TextureImporter:
       name: playerWithSwordRight_5
       rect:
         serializedVersion: 2
-        x: 8
+        x: 458
         y: 64
         width: 45
         height: 55
@@ -262,7 +262,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1993ada76adfe4541a8a1d2df5db0bec
+      spriteID: 842418f4afd7ed241bc7d79a78abfe5a
       vertices: []
       indices: 
       edges: []
@@ -271,7 +271,7 @@ TextureImporter:
       name: playerWithSwordRight_6
       rect:
         serializedVersion: 2
-        x: 72
+        x: 523
         y: 64
         width: 45
         height: 55
@@ -282,7 +282,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db6f5bbe6e8e956468311aa250882037
+      spriteID: 32eef766190310b4fa221e6a647622a9
       vertices: []
       indices: 
       edges: []
@@ -291,27 +291,7 @@ TextureImporter:
       name: playerWithSwordRight_7
       rect:
         serializedVersion: 2
-        x: 3
-        y: 0
-        width: 61
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 042f7edc60d6e6e49b38fdb8f9ee0b16
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerWithSwordRight_8
-      rect:
-        serializedVersion: 2
-        x: 67
+        x: 444
         y: 0
         width: 65
         height: 38
@@ -322,7 +302,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e288260ec6a7f3f4cb795ba1808a57d3
+      spriteID: 92fcd4c6db6654c488ea45d58bb41162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerWithSwordRight_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 61
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637b7c1b235958649b9297a075422601
       vertices: []
       indices: 
       edges: []

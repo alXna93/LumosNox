@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour {
     public bool isAttacking = false;
    
 
+
 	// Use this for initialization
 	void Start () {
         if (instance == null)
@@ -42,6 +43,7 @@ public class PlayerController : MonoBehaviour {
       
 	// Update is called once per frame
 	void Update () {
+        // Set moving velocity
         if (canMove)
         {
             theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
@@ -55,6 +57,7 @@ public class PlayerController : MonoBehaviour {
         myAnim.SetFloat("moveX", theRB.velocity.x);
         myAnim.SetFloat("moveY", theRB.velocity.y);
 
+        // Moving animation
         if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
         {
             if (canMove)
@@ -64,28 +67,27 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
+        // Attacking animation
         if (Input.GetButtonDown("attack") && isAttacking != true)
         {
-
-            StartCoroutine(AttackCo());
+            if (Input.GetAxisRaw("Horizontal") == 1)
+            {
+                myAnim.SetTrigger("AttackingRight");
+            }
+            else if(Input.GetAxisRaw("Horizontal") == -1)
+            {
+                myAnim.SetTrigger("AttackingLeft");
+            }
+         
         }
 
-        
-
-
+       
+        // Camera follwing player
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, BottomLeftLimit.x, TopRightLimit.x), Mathf.Clamp(transform.position.y, BottomLeftLimit.y, TopRightLimit.y), transform.position.z);
 
     }
 
-    private IEnumerator AttackCo()
-    {
-        myAnim.SetBool("Attacking", true);
-        isAttacking = true;
-        yield return null;
-        myAnim.SetBool("Attacking", false);
-        yield return new WaitForSeconds(.1f);
-        isAttacking = false;
-    }
+
 
         public void SetBounds(
             Vector3 botLeft, Vector3 topRight) { 
