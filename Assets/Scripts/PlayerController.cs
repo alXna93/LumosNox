@@ -78,7 +78,16 @@ public class PlayerController : MonoBehaviour {
             {
                 myAnim.SetTrigger("AttackingLeft");
             }
-         
+
+            if (Input.GetAxisRaw("Vertical") == 1)
+            {
+                myAnim.SetTrigger("AttackingUp");
+            }
+            else if (Input.GetAxisRaw("Vertical") == -1)
+            {
+                myAnim.SetTrigger("AttackingDown");
+            }
+
         }
 
        

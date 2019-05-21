@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 2be489c4d5f077a4393d1991b7e572ad
+guid: 3990047360267c043bb2359de15eacc4
 TextureImporter:
   fileIDToRecycleName:
-    21300000: playerWithSwordLeft_0
-    21300002: playerWithSwordLeft_1
-    21300004: playerWithSwordLeft_2
-    21300006: playerWithSwordLeft_3
-    21300008: playerWithSwordLeft_4
-    21300010: playerWithSwordLeft_5
-    21300012: playerWithSwordLeft_6
-    21300014: playerWithSwordLeft_7
-    21300016: playerWithSwordLeft_8
+    21300000: playerWalkLRSword_0
+    21300002: playerWalkLRSword_1
+    21300004: playerWalkLRSword_2
+    21300006: playerWalkLRSword_3
+    21300008: playerWalkLRSword_4
+    21300010: playerWalkLRSword_5
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -90,6 +87,28 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
     buildTarget: Android
     maxTextureSize: 1024
     resizeAlgorithm: 0
@@ -126,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: playerWithSwordLeft_0
+      name: playerWalkLRSword_0
       rect:
         serializedVersion: 2
-        x: 58
-        y: 320
-        width: 63
-        height: 61
+        x: 204
+        y: 325
+        width: 40
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,19 +159,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 105916c9ad078f04d932d90e001c67ef
+      spriteID: 3e1feef0ee621e245bef833922a1b2f5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerWithSwordLeft_1
+      name: playerWalkLRSword_1
       rect:
         serializedVersion: 2
-        x: 202
-        y: 321
-        width: 68
-        height: 60
+        x: 5
+        y: 240
+        width: 37
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,19 +179,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebc94a2ad59b8224cab0f5a91336a08e
+      spriteID: 1167443b0506f0b40afeeb0448f50514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerWithSwordLeft_2
+      name: playerWalkLRSword_2
       rect:
         serializedVersion: 2
-        x: 305
-        y: 320
-        width: 71
-        height: 60
+        x: 200
+        y: 244
+        width: 44
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,39 +199,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0250b7e72a8ef3949b0e66d214e18612
+      spriteID: c6beccd45deca8043882f79c7ca6b2a4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerWithSwordLeft_3
-      rect:
-        serializedVersion: 2
-        x: 498
-        y: 320
-        width: 74
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21d6ad3c793bb9a4682975866a721c01
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerWithSwordLeft_4
+      name: playerWalkLRSword_3
       rect:
         serializedVersion: 2
         x: 311
-        y: 256
-        width: 65
-        height: 60
+        y: 247
+        width: 42
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,19 +219,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da4700cec0e5ef54384f70b54c0f2d56
+      spriteID: 958ff4763fc168241aaf5173c9ec4116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerWithSwordLeft_5
+      name: playerWalkLRSword_4
       rect:
         serializedVersion: 2
-        x: 459
-        y: 64
-        width: 45
-        height: 55
+        x: 97
+        y: 140
+        width: 41
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,19 +239,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c2e804949395544192e1410297a2be8
+      spriteID: 1922eef1dcc464f48bb0e1c84290144a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerWithSwordLeft_6
+      name: playerWalkLRSword_5
       rect:
         serializedVersion: 2
-        x: 523
-        y: 64
-        width: 45
-        height: 55
+        x: 217
+        y: 140
+        width: 49
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,47 +259,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5e506b998432384abe20abfb83728c5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerWithSwordLeft_7
-      rect:
-        serializedVersion: 2
-        x: 444
-        y: 0
-        width: 65
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04c2ceb348286cb4fae52ea2ce9717fd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerWithSwordLeft_8
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 61
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00995452307abd347a80d7c845bc03f4
+      spriteID: 28c114bd0ed40b64f968de2aa5307000
       vertices: []
       indices: 
       edges: []
@@ -308,7 +267,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 951775fac809dff48a7f158580e4603f
+    spriteID: aaf804fbf0a08b44a98f3461794cf171
     vertices: []
     indices: 
     edges: []
