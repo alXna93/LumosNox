@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 229661266}
   m_Layer: 0
   m_Name: UpHitBox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1599,7 +1599,7 @@ GameObject:
   - component: {fileID: 1107750004}
   m_Layer: 0
   m_Name: DownHitbox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4743,7 +4743,7 @@ GameObject:
   - component: {fileID: 1715968079}
   m_Layer: 0
   m_Name: RightHitbox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4806,7 +4806,7 @@ GameObject:
   - component: {fileID: 1724523196}
   m_Layer: 0
   m_Name: LeftHitBox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9480,6 +9480,16 @@ Prefab:
     - target: {fileID: 4227969517279934, guid: 8f415a43b3abde84785ff4654dc7a34f, type: 2}
       propertyPath: m_LocalScale.y
       value: 0.503248
+      objectReference: {fileID: 0}
+    - target: {fileID: 114695980961069896, guid: 8f415a43b3abde84785ff4654dc7a34f,
+        type: 2}
+      propertyPath: thrust
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 50234024487772794, guid: 8f415a43b3abde84785ff4654dc7a34f,
+        type: 2}
+      propertyPath: m_SleepingMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f415a43b3abde84785ff4654dc7a34f, type: 2}

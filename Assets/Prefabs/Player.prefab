@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50234024487772794}
   - component: {fileID: 114407627682943872}
   - component: {fileID: 95395004489484992}
+  - component: {fileID: 114695980961069896}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -112,6 +113,21 @@ MonoBehaviour:
   moveSpeed: 3
   myAnim: {fileID: 95395004489484992}
   areaTransitionName: 
+  canMove: 1
+  isAttacking: 0
+--- !u!114 &114695980961069896
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1502141104206618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e90ca38a3a92e46ab43be535f4e756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 10
+  knockTime: 0.4
 --- !u!212 &212281965753170218
 SpriteRenderer:
   m_ObjectHideFlags: 1
