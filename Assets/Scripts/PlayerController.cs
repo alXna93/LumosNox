@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
 
     public bool canMove = true;
     public bool isAttacking = false;
-   
+    //public bool isStaggering = false; 
 
 
 	// Use this for initialization
@@ -89,6 +89,7 @@ public class PlayerController : MonoBehaviour {
             }
 
         }
+
 
        
         // Camera follwing player
