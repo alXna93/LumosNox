@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -928,7 +928,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 82911831
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: fb8cc55af4b7a034584793949fd90500, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9484,12 +9484,27 @@ Prefab:
     - target: {fileID: 114695980961069896, guid: 8f415a43b3abde84785ff4654dc7a34f,
         type: 2}
       propertyPath: thrust
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 50234024487772794, guid: 8f415a43b3abde84785ff4654dc7a34f,
         type: 2}
       propertyPath: m_SleepingMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58254884033549054, guid: 8f415a43b3abde84785ff4654dc7a34f,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.027187288
+      objectReference: {fileID: 0}
+    - target: {fileID: 58254884033549054, guid: 8f415a43b3abde84785ff4654dc7a34f,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.9822615
+      objectReference: {fileID: 0}
+    - target: {fileID: 58254884033549054, guid: 8f415a43b3abde84785ff4654dc7a34f,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.01697627
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f415a43b3abde84785ff4654dc7a34f, type: 2}

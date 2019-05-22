@@ -11,11 +11,12 @@ public class DepressionEnemy : EnemyAI {
 
 	// Use this for initialization
 	void Start () {
+        currentState = EnemyState.idle;
         target = GameObject.FindWithTag("Player").transform;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         CheckDistance();
 	}
 
@@ -23,7 +24,23 @@ public class DepressionEnemy : EnemyAI {
     {
         if (Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius) 
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.position, EnemySpeed * Time.deltaTime);
+            if (currentState == EnemyState.idle || currentState == EnemyState.walk && currentState != EnemyState.stagger)
+            {
+
+                transform.position = Vector3.MoveTowards(transform.position, target.position, EnemySpeed * Time.deltaTime);
+
+                ChangeState(EnemyState.walk);
+            }
         }
+    }
+
+    private void ChangeState(EnemyState newState)
+    {
+
+        if(currentState != newState)
+        {
+            currentState = newState;
+        }
+
     }
 }
