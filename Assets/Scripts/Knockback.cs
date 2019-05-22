@@ -15,7 +15,7 @@ public class Knockback : MonoBehaviour {
             if (enemy != null)
             {
                 enemy.GetComponent<EnemyAI>().currentState = EnemyState.stagger;
-                enemy.isKinematic = false;
+             
                 Vector2 difference = enemy.transform.position - transform.position;
                 difference = difference.normalized * thrust;
                 enemy.AddForce(difference, ForceMode2D.Impulse);
@@ -30,7 +30,7 @@ public class Knockback : MonoBehaviour {
         {
             yield return new WaitForSeconds(knockTime);
             enemy.velocity = Vector2.zero;
-            enemy.isKinematic = true;
+            
             enemy.GetComponent<EnemyAI>().currentState = EnemyState.idle;
         }
     }
