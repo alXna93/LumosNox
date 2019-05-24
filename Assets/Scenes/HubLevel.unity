@@ -1006,6 +1006,31 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: d475e3ec33087a4459ed974213a79401, type: 2}
+    - target: {fileID: 61883052603538508, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.12005973
+      objectReference: {fileID: 0}
+    - target: {fileID: 61883052603538508, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 61883052603538508, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 2.4627056
+      objectReference: {fileID: 0}
+    - target: {fileID: 61883052603538508, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.034635037
+      objectReference: {fileID: 0}
+    - target: {fileID: 61883052603538508, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1.2481604
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c717a50d4df3404bb7f28f2abf618cd, type: 2}
   m_IsPrefabAsset: 0
@@ -1894,6 +1919,31 @@ Prefab:
         type: 2}
       propertyPath: lines.Array.data[0]
       value: n-test
+      objectReference: {fileID: 0}
+    - target: {fileID: 61883052603538508, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.026952744
+      objectReference: {fileID: 0}
+    - target: {fileID: 61883052603538508, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.0625
+      objectReference: {fileID: 0}
+    - target: {fileID: 61883052603538508, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 2.5930033
+      objectReference: {fileID: 0}
+    - target: {fileID: 61883052603538508, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.0032503605
+      objectReference: {fileID: 0}
+    - target: {fileID: 61883052603538508, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1.2797103
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c717a50d4df3404bb7f28f2abf618cd, type: 2}
@@ -9618,6 +9668,26 @@ Prefab:
       propertyPath: bounds
       value: 
       objectReference: {fileID: 1809177775}
+    - target: {fileID: 61883052603538508, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.095002174
+      objectReference: {fileID: 0}
+    - target: {fileID: 61883052603538508, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 2.5128207
+      objectReference: {fileID: 0}
+    - target: {fileID: 61883052603538508, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.010630816
+      objectReference: {fileID: 0}
+    - target: {fileID: 61883052603538508, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1.364712
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c717a50d4df3404bb7f28f2abf618cd, type: 2}
   m_IsPrefabAsset: 0
