@@ -28,6 +28,8 @@ public class BoundedNPC : MonoBehaviour {
         {
             Move();
         }
+       
+        
 	}
 
     private void Move()
@@ -95,14 +97,15 @@ public class BoundedNPC : MonoBehaviour {
         if (other.CompareTag("Player") && other.isTrigger)
         {
             playerInRange = true;
+         
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && !other.isTrigger)
+        if (other.CompareTag("Player") && other.isTrigger)
         {
-            playerInRange = false;
+            playerInRange = false;            
         }
     }
 }
