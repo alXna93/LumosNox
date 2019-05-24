@@ -10,12 +10,19 @@ public class BoundedNPC : MonoBehaviour {
     private Rigidbody2D myRigidbody;
     private Animator myAnim;
     public Collider2D bounds;
+    private bool isMoving;
     public bool playerInRange;
-
+    public float minMoveTime;
+    public float maxMoveTime;
+    private float moveTimeSeconds;
+    public float minWaitTime;
+    public float maxWaitTime;
+    private float waitTimeSeconds;
 
 	// Use this for initialization
 	void Start () {
-
+        moveTimeSeconds = Random.Range(minMoveTime, maxMoveTime);
+        waitTimeSeconds = Random.Range(minWaitTime, maxWaitTime);
         myTransform = GetComponent<Transform>();
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
@@ -24,13 +31,50 @@ public class BoundedNPC : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (!playerInRange)
+
+        if (isMoving)
         {
-            Move();
+            moveTimeSeconds -= Time.deltaTime;
+            if (moveTimeSeconds <= 0)
+            {
+                moveTimeSeconds = Random.Range(minMoveTime, maxMoveTime);
+
+                isMoving = false;
+                
+               
+            }
+            if (!playerInRange)
+            {
+                Move();
+            }
         }
+        else
+        {
+            waitTimeSeconds -= Time.deltaTime;
+            if(waitTimeSeconds <= 0)
+            {
+                ChooseDifferentDirection();
+                isMoving = true;
+                waitTimeSeconds = Random.Range(minWaitTime, maxWaitTime);
+            }
+        }
+ 
        
         
 	}
+
+    private void ChooseDifferentDirection()
+    {
+        Vector3 temp = directionVector;
+        ChangeDirection();
+        int loops = 0;
+        while (temp == directionVector && loops < 100)
+        {
+            loops++;
+            ChangeDirection();
+        }
+
+    }
 
     private void Move()
     {
@@ -81,15 +125,7 @@ public class BoundedNPC : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Vector3 temp = directionVector;
-        ChangeDirection();
-        int loops = 0;
-        while(temp == directionVector && loops < 100)
-        {
-            loops++;
-            ChangeDirection();
-        }
-
+        ChooseDifferentDirection();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
