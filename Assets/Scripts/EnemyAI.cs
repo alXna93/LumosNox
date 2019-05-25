@@ -17,9 +17,13 @@ public class EnemyAI : MonoBehaviour {
     public string enemyName;
     public int baseAttack;
     public float EnemySpeed;
+    public GameObject enemy;
 	// Use this for initialization
 	void Start () {
-		
+		if(health <= 0)
+        {
+            Destroy(enemy);
+        }
 	}
 	
 	// Update is called once per frame

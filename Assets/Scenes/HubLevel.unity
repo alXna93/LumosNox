@@ -831,11 +831,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeBtwAttack: 0.3
   attackPos: {fileID: 1724523195}
-  attackRange: 0.39
+  attackRange: 1.17
   whatIsEnemies:
     serializedVersion: 2
-    m_Bits: 4294967295
-  damage: 1
+    m_Bits: 256
+  damage: 10
 --- !u!1 &767587213
 GameObject:
   m_ObjectHideFlags: 0
