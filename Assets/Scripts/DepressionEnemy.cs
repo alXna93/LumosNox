@@ -17,7 +17,12 @@ public class DepressionEnemy : EnemyAI {
         currentState = EnemyState.idle;
         target = GameObject.FindWithTag("Player").transform;
         myAnim = GetComponent<Animator>();
-	}
+
+        if (health <= 0)
+        {
+            Destroy(enemy);
+        }
+    }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
