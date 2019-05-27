@@ -831,7 +831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeBtwAttack: 0.3
   attackPos: {fileID: 1724523195}
-  attackRange: 1.17
+  attackRange: 1.04
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 256
