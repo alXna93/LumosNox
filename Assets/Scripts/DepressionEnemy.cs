@@ -10,6 +10,7 @@ public class DepressionEnemy : EnemyAI {
     public Transform homePosition;
     public Animator myAnim;
     public Rigidbody2D myRigidbody;
+ 
 
     // Use this for initialization
     void Start () {
@@ -18,16 +19,13 @@ public class DepressionEnemy : EnemyAI {
         target = GameObject.FindWithTag("Player").transform;
         myAnim = GetComponent<Animator>();
 
-        if (health <= 0)
-        {
-            Destroy(enemy);
-        }
     }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
         CheckDistance();
-	}
+       
+    }
 
     void CheckDistance()
     {

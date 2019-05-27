@@ -11,6 +11,7 @@ public class PlayerAttack : MonoBehaviour {
     public float attackRange;
     public LayerMask whatIsEnemies;
     public int damage;
+
 	// Use this for initialization
 	void Start () {
 		
