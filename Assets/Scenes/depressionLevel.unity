@@ -5242,6 +5242,11 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114665114701272800, guid: 0b53206ba60b8dc4fbf8fd61930d3b89,
+        type: 2}
+      propertyPath: depEnemy
+      value: 
+      objectReference: {fileID: 1843447176}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b53206ba60b8dc4fbf8fd61930d3b89, type: 2}
   m_IsPrefabAsset: 0
@@ -10251,6 +10256,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26a2cb506f00106468f5d5446897c31d, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1843447176 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1259871176371832, guid: 0b53206ba60b8dc4fbf8fd61930d3b89,
+    type: 2}
+  m_PrefabInternal: {fileID: 584086267}
 --- !u!1 &1843934116
 GameObject:
   m_ObjectHideFlags: 0
@@ -10326,11 +10336,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4853274763799254, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 12.49
+      value: 9.09
       objectReference: {fileID: 0}
     - target: {fileID: 4853274763799254, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.94
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: 4853274763799254, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.z
@@ -10368,6 +10378,11 @@ Prefab:
         type: 2}
       propertyPath: areaToLoad
       value: HubLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 114969665509385208, guid: 5843d716198270246821b767411e9d29,
+        type: 2}
+      propertyPath: areaTransitionName
+      value: level-1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5843d716198270246821b767411e9d29, type: 2}

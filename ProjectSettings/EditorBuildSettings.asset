@@ -11,10 +11,19 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/HubLevel.unity
+    guid: 2f7cb68e6245ba648a4b67faaee0f437
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Test.unity
+    path: Assets/Scenes/depressionLevel.unity
     guid: c12669908c9096640955aed80f9424a8
+  - enabled: 1
+    path: Assets/Scenes/anxietyLevel.unity
+    guid: e316a500d99896544941bcc65ce79606
+  - enabled: 1
+    path: Assets/Scenes/maniaLevel.unity
+    guid: e609ffce3e8759d4e8f377a73024ad63
   m_configObjects: {}

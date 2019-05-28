@@ -10,31 +10,35 @@ public enum EnemyState
     stagger
 }
 
-public class EnemyAI : MonoBehaviour {
+public class EnemyAI : MonoBehaviour
+{
 
     public EnemyState currentState;
     public int health;
     public string enemyName;
     public int baseAttack;
     public float EnemySpeed;
-    public GameObject depEnemy;
-	// Use this for initialization
-	void Start () {
+    public GameObject destroyEnemy;
 
+    // Use this for initialization
+    void Start()
+    {
         if (health <= 0)
         {
-            Destroy(depEnemy);
+            Destroy(destroyEnemy);
         }
+
     }
 
-        
-    
 
-	
-	// Update is called once per frame
-	void Update () {
-       
+
+
+
+    // Update is called once per frame
+    void Update()
+    {
+
+
+
     }
-
-  
 }

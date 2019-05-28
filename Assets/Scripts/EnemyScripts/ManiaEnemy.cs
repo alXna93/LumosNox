@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DepressionEnemy : EnemyAI {
+public class ManiaEnemy : EnemyAI {
+
 
     public Transform target;
     public float chaseRadius;
@@ -10,47 +11,44 @@ public class DepressionEnemy : EnemyAI {
     public Transform homePosition;
     public Animator myAnim;
     public Rigidbody2D myRigidbody;
-    public GameObject depEnemy;
 
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         myRigidbody = GetComponent<Rigidbody2D>();
         currentState = EnemyState.idle;
         target = GameObject.FindWithTag("Player").transform;
         myAnim = GetComponent<Animator>();
 
     }
-	
-	// Update is called once per frame
-	void FixedUpdate () {
-        CheckDistance();
 
-        if (health <= 0)
-        {
-            Destroy(depEnemy);
-        }
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        CheckDistance();
 
     }
 
     void CheckDistance()
     {
-        if (Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius) 
+        if (Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius)
         {
             if (currentState == EnemyState.idle || currentState == EnemyState.walk && currentState != EnemyState.stagger)
             {
 
-                Vector3 temp= Vector3.MoveTowards(transform.position, target.position, EnemySpeed * Time.deltaTime);
+                Vector3 temp = Vector3.MoveTowards(transform.position, target.position, EnemySpeed * Time.deltaTime);
 
                 changeAnim(temp - transform.position);
                 myRigidbody.MovePosition(temp);
 
                 ChangeState(EnemyState.walk);
-                myAnim.SetBool("startWalking", true);
+                myAnim.SetBool("startFlying", true);
             }
-        } else if (Vector3.Distance(target.position, transform.position) > chaseRadius)
+        }
+        else if (Vector3.Distance(target.position, transform.position) > chaseRadius)
         {
-            myAnim.SetBool("startWalking", false);
+            myAnim.SetBool("startFlying", false);
         }
     }
 
@@ -62,7 +60,7 @@ public class DepressionEnemy : EnemyAI {
 
     private void changeAnim(Vector2 direction)
     {
-        if(Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
             if (direction.x > 0)
             {
@@ -90,12 +88,12 @@ public class DepressionEnemy : EnemyAI {
     private void ChangeState(EnemyState newState)
     {
 
-        if(currentState != newState)
+        if (currentState != newState)
         {
             currentState = newState;
         }
 
     }
 
-  
+
 }
