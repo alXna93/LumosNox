@@ -2433,7 +2433,7 @@ Prefab:
     - target: {fileID: 114315417234366544, guid: 5843d716198270246821b767411e9d29,
         type: 2}
       propertyPath: transitionName
-      value: Countryside-1
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5843d716198270246821b767411e9d29, type: 2}
