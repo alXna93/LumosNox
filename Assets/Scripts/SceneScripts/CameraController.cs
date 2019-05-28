@@ -7,6 +7,7 @@ public class CameraController : MonoBehaviour {
     public Transform target;
 
     public Tilemap theMap;
+  
 
     private Vector3 bottomLeftLimit;
     private Vector3 topRightLimit;
