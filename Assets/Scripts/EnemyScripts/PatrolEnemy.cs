@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PatrolEnemy : DepressionEnemy
 {
-
     public Transform[] path;
     public int currentPoint;
     public Transform currentGoal;
