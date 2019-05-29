@@ -15,8 +15,7 @@ public class EnemyAI : MonoBehaviour
     public FloatValue maxHealth;
     public EnemyState currentState;
     public float health;
-    public string enemyName;
-    public int baseAttack;
+    public string enemyName;   
     public float EnemySpeed;
     //public GameObject destroyEnemy;
 
