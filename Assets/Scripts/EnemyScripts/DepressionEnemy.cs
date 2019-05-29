@@ -19,6 +19,7 @@ public class DepressionEnemy : EnemyAI {
         currentState = EnemyState.idle;
         target = GameObject.FindWithTag("Player").transform;
         myAnim = GetComponent<Animator>();
+        myAnim.SetBool("startWalking", true);
 
     }
 	
@@ -30,7 +31,7 @@ public class DepressionEnemy : EnemyAI {
 
     }
 
-    void CheckDistance()
+    public virtual void CheckDistance()
     {
         if (Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius) 
         {
@@ -57,7 +58,7 @@ public class DepressionEnemy : EnemyAI {
         myAnim.SetFloat("moveY", setVector.y);
     }
 
-    private void changeAnim(Vector2 direction)
+    public void changeAnim(Vector2 direction)
     {
         if(Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {

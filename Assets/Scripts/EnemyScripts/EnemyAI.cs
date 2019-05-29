@@ -17,7 +17,7 @@ public class EnemyAI : MonoBehaviour
     public float health;
     public string enemyName;   
     public float EnemySpeed;
-    //public GameObject destroyEnemy;
+    public int baseAttack;
 
     private void Awake()
     {
