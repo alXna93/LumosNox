@@ -201,6 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 229661265}
   - component: {fileID: 229661266}
+  - component: {fileID: 229661267}
   m_Layer: 0
   m_Name: UpHitBox
   m_TagString: Player
@@ -215,8 +216,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 229661264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99999386, y: 1.000004, z: 1}
+  m_LocalPosition: {x: 0.28, y: 0.46, z: 0}
+  m_LocalScale: {x: 1.39, y: 1.15, z: 1}
   m_Children: []
   m_Father: {fileID: 111553}
   m_RootOrder: 3
@@ -264,6 +265,20 @@ PolygonCollider2D:
       - {x: -0.74367934, y: -0.5885766}
       - {x: -0.74708915, y: -0.583506}
       - {x: -0.75096107, y: -0.5834579}
+--- !u!114 &229661267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 229661264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e90ca38a3a92e46ab43be535f4e756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 2
+  knockTime: 0.2
+  damage: 1
 --- !u!1001 &347634247
 Prefab:
   m_ObjectHideFlags: 0
@@ -474,6 +489,31 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1502141104206618, guid: 8f415a43b3abde84785ff4654dc7a34f,
     type: 2}
   m_PrefabInternal: {fileID: 1934388720}
+--- !u!61 &757492058
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 757492057}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0065018535, y: -0.024020672}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.4375, y: 3.1875}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3459388, y: 2.306716}
+  m_EdgeRadius: 0
 --- !u!58 &757492063
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -489,19 +529,6 @@ CircleCollider2D:
   m_Offset: {x: 0.01697627, y: -0.027187288}
   serializedVersion: 2
   m_Radius: 0.9822615
---- !u!114 &757492064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 757492057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80e90ca38a3a92e46ab43be535f4e756, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 5
-  knockTime: 0.2
 --- !u!114 &757492065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,7 +542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeBtwAttack: 0.32
   attackPos: {fileID: 1724523195}
-  attackRange: 1.04
+  attackRange: 0.98
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 256
@@ -896,6 +923,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1107750003}
   - component: {fileID: 1107750004}
+  - component: {fileID: 1107750005}
   m_Layer: 0
   m_Name: DownHitbox
   m_TagString: Player
@@ -910,8 +938,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1107750002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.31, y: 0, z: 0}
+  m_LocalScale: {x: 1.48, y: 1.27, z: 1}
   m_Children: []
   m_Father: {fileID: 111553}
   m_RootOrder: 0
@@ -947,6 +975,20 @@ PolygonCollider2D:
       - {x: 0.58778536, y: -0.80901694}
       - {x: -0.14526784, y: -1.4506781}
       - {x: -0.95799196, y: -1.575632}
+--- !u!114 &1107750005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1107750002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e90ca38a3a92e46ab43be535f4e756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 2
+  knockTime: 0.2
+  damage: 1
 --- !u!1 &1122796746
 GameObject:
   m_ObjectHideFlags: 0
@@ -5447,6 +5489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1715968078}
   - component: {fileID: 1715968079}
+  - component: {fileID: 1715968080}
   m_Layer: 0
   m_Name: RightHitbox
   m_TagString: Player
@@ -5460,13 +5503,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1715968077}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99999386, y: 1.000004, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.073515825, w: 0.99729407}
+  m_LocalPosition: {x: 0.11, y: 0, z: 0}
+  m_LocalScale: {x: 1.21, y: 1.27, z: 1}
   m_Children: []
   m_Father: {fileID: 111553}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.432}
 --- !u!60 &1715968079
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5501,6 +5544,20 @@ PolygonCollider2D:
       - {x: 1.4314746, y: -0.6469341}
       - {x: 0.9259819, y: -0.73368436}
       - {x: 0.26522064, y: -0.9173934}
+--- !u!114 &1715968080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1715968077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e90ca38a3a92e46ab43be535f4e756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 2
+  knockTime: 0.2
+  damage: 1
 --- !u!1 &1724523194
 GameObject:
   m_ObjectHideFlags: 0
@@ -5510,6 +5567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1724523195}
   - component: {fileID: 1724523196}
+  - component: {fileID: 1724523197}
   m_Layer: 0
   m_Name: LeftHitBox
   m_TagString: Player
@@ -5523,13 +5581,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1724523194}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.3216538, w: 0.94685733}
+  m_LocalPosition: {x: -0.55, y: 0.32, z: 0}
   m_LocalScale: {x: 0.99999386, y: 1.000004, z: 1}
   m_Children: []
   m_Father: {fileID: 111553}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 37.526}
 --- !u!60 &1724523196
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5571,6 +5629,20 @@ PolygonCollider2D:
       - {x: -0.4032589, y: -0.8212696}
       - {x: -0.39616182, y: -0.81619895}
       - {x: -0.40280735, y: -0.81632185}
+--- !u!114 &1724523197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1724523194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e90ca38a3a92e46ab43be535f4e756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 2
+  knockTime: 0.2
+  damage: 1
 --- !u!1 &1809177773
 GameObject:
   m_ObjectHideFlags: 0

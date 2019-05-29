@@ -10,7 +10,7 @@ public class DepressionEnemy : EnemyAI {
     public Transform homePosition;
     public Animator myAnim;
     public Rigidbody2D myRigidbody;
-    public GameObject depEnemy;
+    
 
 
     // Use this for initialization
@@ -26,10 +26,7 @@ public class DepressionEnemy : EnemyAI {
 	void FixedUpdate () {
         CheckDistance();
 
-        if (health <= 0)
-        {
-            Destroy(depEnemy);
-        }
+       
 
     }
 

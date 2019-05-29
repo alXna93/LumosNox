@@ -156,15 +156,6 @@ Prefab:
       propertyPath: m_Name
       value: anxietyEnemy (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 114177200683823854, guid: 52c98003d6b568b43a279e6b4b636578,
-        type: 2}
-      propertyPath: chaseRadius
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1565522592060550, guid: 52c98003d6b568b43a279e6b4b636578, type: 2}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52c98003d6b568b43a279e6b4b636578, type: 2}
   m_IsPrefabAsset: 0
@@ -527,6 +518,10 @@ Prefab:
     - target: {fileID: 1565522592060550, guid: 52c98003d6b568b43a279e6b4b636578, type: 2}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1565522592060550, guid: 52c98003d6b568b43a279e6b4b636578, type: 2}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52c98003d6b568b43a279e6b4b636578, type: 2}

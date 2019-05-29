@@ -2,14 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum PlayerState
+{
+    walk,
+    attack,
+    stagger,
+    idle
+}
+
 public class PlayerController : MonoBehaviour {
 
+
+    public PlayerState currentState;
     public Rigidbody2D theRB;
     public float moveSpeed;
-
+    public Vector3 change;
     public Animator myAnim;
 
     public static PlayerController instance;
+
 
     public string areaTransitionName;
 
@@ -17,9 +29,8 @@ public class PlayerController : MonoBehaviour {
     private Vector3 TopRightLimit;
 
     public bool canMove = true;
-    public bool isAttacking = false;
-    //public bool isStaggering = false; 
-
+    //public bool isAttacking = false;
+   
 
 	// Use this for initialization
 	void Start () {
@@ -37,69 +48,84 @@ public class PlayerController : MonoBehaviour {
         }
 
         DontDestroyOnLoad(gameObject);
-		
+        currentState = PlayerState.walk;
+        myAnim.SetFloat("moveX", 0);
+        myAnim.SetFloat("moveY", -1);
 	}
-	
-      
-	// Update is called once per frame
-	void Update () {
-        // Set moving velocity
-        if (canMove)
-        {
-            theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
-           
-        }
-        else
-        {
-            theRB.velocity = Vector2.zero;
-        }
 
-        myAnim.SetFloat("moveX", theRB.velocity.x);
-        myAnim.SetFloat("moveY", theRB.velocity.y);
 
-        // Moving animation
-        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+    // Update is called once per frame
+    void Update() {
+
+        change = Vector3.zero;
+        change.x = Input.GetAxisRaw("Horizontal");
+        change.y = Input.GetAxisRaw("Vertical");
+        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger) 
         {
-            if (canMove)
-            {
-                myAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
-                myAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
-            }
-        }
-
-        // Attacking animation
-        if (Input.GetButtonDown("attack") && isAttacking != true)
-        {
-            if (Input.GetAxisRaw("Horizontal") == 1)
-            {
-                myAnim.SetTrigger("AttackingRight");
-            }
-            else if(Input.GetAxisRaw("Horizontal") == -1)
-            {
-                myAnim.SetTrigger("AttackingLeft");
-            }
-
-            if (Input.GetAxisRaw("Vertical") == 1)
-            {
-                myAnim.SetTrigger("AttackingUp");
-            }
-            else if (Input.GetAxisRaw("Vertical") == -1)
-            {
-                myAnim.SetTrigger("AttackingDown");
-            }
+            StartCoroutine(AttackCo());
 
         }
+        else if (currentState == PlayerState.walk || currentState == PlayerState.idle)
+        {
+            UpdateAnimationAndMove();
+        }
 
-
-       
-        // Camera follwing player
+        // Camera following player
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, BottomLeftLimit.x, TopRightLimit.x), Mathf.Clamp(transform.position.y, BottomLeftLimit.y, TopRightLimit.y), transform.position.z);
 
     }
 
+    private IEnumerator AttackCo()
+    {
+        myAnim.SetBool("attacking", true);
+        currentState = PlayerState.attack;
+        yield return null;
+        myAnim.SetBool("attacking", false);
+        yield return new WaitForSeconds(.3f);
+        currentState = PlayerState.walk;
+    }
+
+    void UpdateAnimationAndMove()
+    {
+        if (change != Vector3.zero)
+        {
+            MoveCharacter();
+            myAnim.SetFloat("moveX", change.x);
+            myAnim.SetFloat("moveY", change.y);
+            myAnim.SetBool("moving", true);
+        }
+        else
+        {
+            myAnim.SetBool("moving", false);
+        }
+    }
+
+    void MoveCharacter()
+    {
+        change.Normalize();
+        theRB.MovePosition(transform.position + change * moveSpeed * Time.deltaTime);
+    }
+
+    public void Knock(float knockTime)
+    {
+        StartCoroutine(KnockCo(knockTime));
+    }
+
+    private IEnumerator KnockCo(float knockTime)
+    {
+        if (theRB != null)
+        {
+            yield return new WaitForSeconds(knockTime);
+            theRB.velocity = Vector2.zero;
+            currentState = PlayerState.idle;
+            theRB.velocity = Vector2.zero;
+        }
+    }
 
 
-        public void SetBounds(
+
+
+    public void SetBounds(
             Vector3 botLeft, Vector3 topRight) { 
 
             BottomLeftLimit = botLeft + new Vector3(.5f, 1f, 0f);
