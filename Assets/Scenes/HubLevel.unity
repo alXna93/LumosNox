@@ -146,9 +146,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a3a7c0e602a0d429a05ea443954edb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPerson: 1
+  isPerson: 0
   clue: {fileID: 11400000, guid: f785be799699a244da78267bcc0e98e0, type: 2}
-  lines: []
+  lines:
+  - Attack your Anxiety
 --- !u!61 &59596729
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -703,10 +704,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a3a7c0e602a0d429a05ea443954edb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPerson: 1
+  isPerson: 0
   clue: {fileID: 11400000, guid: f785be799699a244da78267bcc0e98e0, type: 2}
   lines:
-  - test
+  - Shut out the Mania
 --- !u!61 &767587215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -956,9 +957,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a3a7c0e602a0d429a05ea443954edb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPerson: 1
+  isPerson: 0
   clue: {fileID: 11400000, guid: f785be799699a244da78267bcc0e98e0, type: 2}
-  lines: []
+  lines:
+  - Demon of Depression
 --- !u!61 &792715060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1158,9 +1160,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a3a7c0e602a0d429a05ea443954edb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPerson: 1
-  clue: {fileID: 0}
-  lines: []
+  isPerson: 0
+  clue: {fileID: 11400000, guid: f785be799699a244da78267bcc0e98e0, type: 2}
+  lines:
+  - Welcome to the world that holds your past Lenna..
+  - Wondering what you are doing here? Let me explain..
+  - You've been trapped here by your past self, unable to move on to your future..
+  - 'Is this all in your head? Of course! '
+  - However that doesnt make whats happening any less real..
+  - Until you face and conquer the demons of your past, you'll never be able to live
+    properly in the future..
+  - In this world of your subconscious resides three of your past demons that you
+    carry with you..
+  - Mania, where there is no such thing as a calm in the storm..
+  - Anxiety, silently crippling you wherever you go..
+  - And lastly..depression, the demon that can turn your life upside down in and instant.
+  - Defeat these demons and finally find yourself free to move on and have a future..
 --- !u!61 &993765858
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11765,7 +11780,7 @@ Prefab:
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
       propertyPath: lines.Array.size
-      value: 4
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4643784359362334, guid: 8c717a50d4df3404bb7f28f2abf618cd, type: 2}
       propertyPath: m_LocalPosition.x
@@ -11827,22 +11842,22 @@ Prefab:
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
       propertyPath: lines.Array.data[0]
-      value: n-Lenna
+      value: n-Anxietatem
       objectReference: {fileID: 0}
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
       propertyPath: lines.Array.data[1]
-      value: test 1
+      value: Why do you feel like you need to hide?
       objectReference: {fileID: 0}
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
       propertyPath: lines.Array.data[2]
-      value: n-NPC
+      value: n-Lenna
       objectReference: {fileID: 0}
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
       propertyPath: lines.Array.data[3]
-      value: test 2
+      value: Sometimes staying out of the crowd is easier than being part of it..
       objectReference: {fileID: 0}
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
@@ -11852,31 +11867,30 @@ Prefab:
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
       propertyPath: lines.Array.data[5]
-      value: 'Its the reason why you feel so lonely, almost to the point of isolation
-        but at the same time you''re scared to be seen,  almost gifting yourself with
-        the power of invisibility but the problem with invisibility you see is that
-        nobody can see your pain.. '
+      value: But you often feel so lonely, almost to the point of isolation, but at
+        the same time you're scared to be seen.
       objectReference: {fileID: 0}
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
       propertyPath: lines.Array.data[6]
-      value: n-Anxietatem
-      objectReference: {fileID: 0}
-    - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
-        type: 2}
-      propertyPath: lines.Array.data[7]
-      value: Almost gifting yourself with the power of invisibility but invisibility
-        means nobody can see your pain..
-      objectReference: {fileID: 0}
-    - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
-        type: 2}
-      propertyPath: lines.Array.data[8]
       value: n-Lenna
       objectReference: {fileID: 0}
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
+      propertyPath: lines.Array.data[7]
+      value: I'm scared of what people will think if i really let them in and let
+        them see me..
+      objectReference: {fileID: 0}
+    - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: lines.Array.data[8]
+      value: n-Anxietatem
+      objectReference: {fileID: 0}
+    - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
       propertyPath: lines.Array.data[9]
-      value: I dont know how to control it..
+      value: You have gifted yourself with the power of invisibility, the problem
+        with invisibility is no-one can see your pain..
       objectReference: {fileID: 0}
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
@@ -11886,8 +11900,8 @@ Prefab:
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
       propertyPath: lines.Array.data[11]
-      value: Let others in, let others see you and dont be scared of the crowd..be
-        part of it.
+      value: Give yourself the power to be seen, go on, defeat anxiety and stand out
+        of the crowd by being part of it..
       objectReference: {fileID: 0}
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
@@ -11895,6 +11909,11 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: f785be799699a244da78267bcc0e98e0,
         type: 2}
+    - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: lines.Array.data[12]
+      value: test 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c717a50d4df3404bb7f28f2abf618cd, type: 2}
   m_IsPrefabAsset: 0
