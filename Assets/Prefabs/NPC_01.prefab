@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPerson: 1
-  clue: {fileID: 0}
+  clue: {fileID: 11400000, guid: f785be799699a244da78267bcc0e98e0, type: 2}
   lines:
   - n-Custos
   - Recognise this place?

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -146,10 +146,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a3a7c0e602a0d429a05ea443954edb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPerson: 0
+  isPerson: 1
   clue: {fileID: 11400000, guid: f785be799699a244da78267bcc0e98e0, type: 2}
-  lines:
-  - Don't let anxiety cripple you..
+  lines: []
 --- !u!61 &59596729
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -704,10 +703,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a3a7c0e602a0d429a05ea443954edb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPerson: 0
+  isPerson: 1
   clue: {fileID: 11400000, guid: f785be799699a244da78267bcc0e98e0, type: 2}
   lines:
-  - Entering mania..
+  - test
 --- !u!61 &767587215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -957,10 +956,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a3a7c0e602a0d429a05ea443954edb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPerson: 0
+  isPerson: 1
   clue: {fileID: 11400000, guid: f785be799699a244da78267bcc0e98e0, type: 2}
-  lines:
-  - Defeat the demon of depression..
+  lines: []
 --- !u!61 &792715060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1127,48 +1125,6 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 61101843427925442, guid: f5c70ca33567b7a488b0eb1c22ed4695,
     type: 2}
   m_PrefabInternal: {fileID: 1667904183}
---- !u!1001 &990058038
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4259645643416254, guid: 14e93a32c0da6c34b81f2255eacb6aca, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.5030694
-      objectReference: {fileID: 0}
-    - target: {fileID: 4259645643416254, guid: 14e93a32c0da6c34b81f2255eacb6aca, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.1226362
-      objectReference: {fileID: 0}
-    - target: {fileID: 4259645643416254, guid: 14e93a32c0da6c34b81f2255eacb6aca, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 6.059227
-      objectReference: {fileID: 0}
-    - target: {fileID: 4259645643416254, guid: 14e93a32c0da6c34b81f2255eacb6aca, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4259645643416254, guid: 14e93a32c0da6c34b81f2255eacb6aca, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4259645643416254, guid: 14e93a32c0da6c34b81f2255eacb6aca, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4259645643416254, guid: 14e93a32c0da6c34b81f2255eacb6aca, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4259645643416254, guid: 14e93a32c0da6c34b81f2255eacb6aca, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 14e93a32c0da6c34b81f2255eacb6aca, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &993765856
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,22 +1153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a3a7c0e602a0d429a05ea443954edb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPerson: 0
-  clue: {fileID: 11400000, guid: f785be799699a244da78267bcc0e98e0, type: 2}
-  lines:
-  - Welcome to the world that holds your past Lenna..
-  - Wondering what you are doing here? Let me explain..
-  - You've been trapped here by your past self, unable to move on to your future..
-  - 'Is this all in your head? Of course! '
-  - However that doesnt make whats happening any less real..
-  - Until you face and conquer the demons of your past, you'll never be able to live
-    properly in the future..
-  - 'In this world of your subconscious resides three of your past demons that you
-    carry with you.. '
-  - Mania, where there is no such thing as a calm in the storm..
-  - Anxiety, silently crippling you wherever you go..
-  - And lastly..depression, the demon that can turn your life upside down in and instant.
-  - Defeat these demons and finally find yourself free to move on and have a future..
+  isPerson: 1
+  clue: {fileID: 0}
+  lines: []
 --- !u!61 &993765858
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11817,7 +11760,7 @@ Prefab:
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
       propertyPath: lines.Array.size
-      value: 12
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4643784359362334, guid: 8c717a50d4df3404bb7f28f2abf618cd, type: 2}
       propertyPath: m_LocalPosition.x
@@ -11879,22 +11822,22 @@ Prefab:
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
       propertyPath: lines.Array.data[0]
-      value: n-Anxietatem
-      objectReference: {fileID: 0}
-    - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
-        type: 2}
-      propertyPath: lines.Array.data[1]
-      value: Part of the reason you are stuck in the past is caused by your anxities
-      objectReference: {fileID: 0}
-    - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
-        type: 2}
-      propertyPath: lines.Array.data[2]
       value: n-Lenna
       objectReference: {fileID: 0}
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
+      propertyPath: lines.Array.data[1]
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
+      propertyPath: lines.Array.data[2]
+      value: n-NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
+        type: 2}
       propertyPath: lines.Array.data[3]
-      value: I try to understand my anxiety but i just can't..
+      value: test
       objectReference: {fileID: 0}
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
@@ -12043,3 +11986,49 @@ Prefab:
     - {fileID: 114695980961069896, guid: 8f415a43b3abde84785ff4654dc7a34f, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 8f415a43b3abde84785ff4654dc7a34f, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1937236140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1652328504881242, guid: 14e93a32c0da6c34b81f2255eacb6aca,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1937236142}
+  - component: {fileID: 1937236141}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1937236141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114243876200847582, guid: 14e93a32c0da6c34b81f2255eacb6aca,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1937236140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64b54fa6fc6d9eb4eb96aca29b803836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameMenuOpen: 0
+  dialogActive: 0
+  fadingBetweenScenes: 0
+--- !u!4 &1937236142
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4259645643416254, guid: 14e93a32c0da6c34b81f2255eacb6aca,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1937236140}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5030694, y: -0.1226362, z: 6.059227}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
