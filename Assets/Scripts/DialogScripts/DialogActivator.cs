@@ -22,6 +22,15 @@ public class DialogActivator : Interactables {
         }
 	}
 
+
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.tag == "Player" && other.isTrigger)
+    //    {
+    //        clue.Raise();
+    //        canActivate = true;
+    //    }
+    //}
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Player" && !other.isTrigger)
@@ -30,6 +39,8 @@ public class DialogActivator : Interactables {
             canActivate = false;
         }
     }
+
+   
 
 
 }

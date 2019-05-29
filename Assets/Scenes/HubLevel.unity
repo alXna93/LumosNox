@@ -1105,6 +1105,15 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1111389301541324, guid: c290710241d254a48936ce3b8616cba3, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114565939784117488, guid: c290710241d254a48936ce3b8616cba3,
+        type: 2}
+      propertyPath: dialogText
+      value: 
+      objectReference: {fileID: 1091781662}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c290710241d254a48936ce3b8616cba3, type: 2}
   m_IsPrefabAsset: 0
@@ -1160,6 +1169,94 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14e93a32c0da6c34b81f2255eacb6aca, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &993765856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 993765859}
+  - component: {fileID: 993765858}
+  - component: {fileID: 993765857}
+  m_Layer: 0
+  m_Name: AboutSign
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &993765857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 993765856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a3a7c0e602a0d429a05ea443954edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPerson: 0
+  clue: {fileID: 11400000, guid: f785be799699a244da78267bcc0e98e0, type: 2}
+  lines:
+  - Welcome to the world that holds your past Lenna..
+  - Wondering what you are doing here? Let me explain..
+  - You've been trapped here by your past self, unable to move on to your future..
+  - 'Is this all in your head? Of course! '
+  - However that doesnt make whats happening any less real..
+  - Until you face and conquer the demons of your past, you'll never be able to live
+    properly in the future..
+  - 'In this world of your subconscious resides three of your past demons that you
+    carry with you.. '
+  - Mania, where there is no such thing as a calm in the storm..
+  - Anxiety, silently crippling you wherever you go..
+  - And lastly..depression, the demon that can turn your life upside down in and instant.
+  - Defeat these demons and finally find yourself free to move on and have a future..
+--- !u!61 &993765858
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 993765856}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.04254818, y: -0.073629975}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1999931, y: 1.14726}
+  m_EdgeRadius: 0
+--- !u!4 &993765859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 993765856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.47, y: -8.37, z: 5.877305}
+  m_LocalScale: {x: 1.125, y: 1.175, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1091781662 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114399140383537692, guid: 9ee6268f4497eae4d9bbbb7e6f4ca028,
+    type: 2}
+  m_PrefabInternal: {fileID: 150587474}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1107750002
 GameObject:
   m_ObjectHideFlags: 0
@@ -2443,6 +2540,15 @@ Tilemap:
     second:
       m_TileIndex: 117
       m_TileSpriteIndex: 117
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: -15, y: -9, z: 0}
+    second:
+      m_TileIndex: 90
+      m_TileSpriteIndex: 157
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -5258,7 +5364,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 048f9917d107e8c41a850b64558aa95f, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 906f3a4badbf74941a35d6db90165e12, type: 2}
-  - m_RefCount: 3
+  - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: ab662d66cd03f8644a48e5052e94c306, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: afe4be921ccc3a74a85586bd9368bf57, type: 2}
@@ -5733,7 +5839,7 @@ Tilemap:
     m_Data: {fileID: 21300322, guid: af6bc9dfbb9b08e4890cf8e4b8dd00c3, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300966, guid: af6bc9dfbb9b08e4890cf8e4b8dd00c3, type: 3}
-  - m_RefCount: 3
+  - m_RefCount: 4
     m_Data: {fileID: 21300222, guid: af6bc9dfbb9b08e4890cf8e4b8dd00c3, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21301100, guid: af6bc9dfbb9b08e4890cf8e4b8dd00c3, type: 3}
@@ -5760,7 +5866,7 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: 21300008, guid: d5df78f2169fdab4cadce1ff6b966941, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 350
+  - m_RefCount: 351
     m_Data:
       e00: 1
       e01: 0
@@ -5779,7 +5885,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 350
+  - m_RefCount: 351
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -11853,11 +11959,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4227969517279934, guid: 8f415a43b3abde84785ff4654dc7a34f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.685
+      value: -14.19
       objectReference: {fileID: 0}
     - target: {fileID: 4227969517279934, guid: 8f415a43b3abde84785ff4654dc7a34f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.994
+      value: -5.33
       objectReference: {fileID: 0}
     - target: {fileID: 4227969517279934, guid: 8f415a43b3abde84785ff4654dc7a34f, type: 2}
       propertyPath: m_LocalPosition.z
