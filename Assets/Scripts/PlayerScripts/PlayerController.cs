@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour {
     private Vector3 TopRightLimit;
 
     public bool canMove = true;
-    //public bool isAttacking = false;
+  
    
 
 	// Use this for initialization
