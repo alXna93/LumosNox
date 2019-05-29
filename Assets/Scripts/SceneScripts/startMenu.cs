@@ -15,11 +15,11 @@ public class startMenu : MonoBehaviour {
 		
 	}
 
-    public void NewGame()
+    public void NewGame() //If player clicks on new game, load Hublevel scene
     {
         SceneManager.LoadScene("HubLevel");
     }
-    public void QuitGame()
+    public void QuitGame() //If player clicks on quit, quit the application
     {
         Application.Quit();
     }

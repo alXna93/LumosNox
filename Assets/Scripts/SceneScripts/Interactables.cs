@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Interactables : MonoBehaviour {
 
-    public bool isPerson = true;
-    public Signal clue;
-    protected bool canActivate;
+    public bool isPerson = true; //Is collider a person
+    public Signal clue; //Signal to raise clue
+    protected bool canActivate; //Can the dialog be activated
 
 
     // Use this for initialization
@@ -21,13 +21,13 @@ public class Interactables : MonoBehaviour {
 
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other) //if player collides with trigger, raise the signal to show question mark
     {
         if (other.tag == "Player" && !other.isTrigger)
         {
             clue.Raise();        
           
-            canActivate = true;
+            canActivate = true; //activate dialog
        
         }
     }
