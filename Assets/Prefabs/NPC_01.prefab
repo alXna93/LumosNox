@@ -153,6 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a3a7c0e602a0d429a05ea443954edb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPerson: 1
+  clue: {fileID: 0}
   lines:
   - n-Custos
   - Recognise this place?
@@ -165,7 +167,6 @@ MonoBehaviour:
   - How can i get out of the past?
   - n-Custos
   - That is what you are here to do?
-  isPerson: 1
 --- !u!212 &212978638906484966
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -119,13 +119,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af6c6d0115741584a97b7631088e8b26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: {fileID: 0}
+  maxHealth: {fileID: 11400000, guid: 1d3a49bfd25162240bd45acc078389f9, type: 2}
   currentState: 0
-  health: 10
+  health: 0
   enemyName: Anxiety
-  baseAttack: 5
   EnemySpeed: 4
-  destroyEnemy: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 1
@@ -145,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 2
   knockTime: 0.2
-  damage: 0
+  damage: 1
 --- !u!212 &212508746538077052
 SpriteRenderer:
   m_ObjectHideFlags: 1

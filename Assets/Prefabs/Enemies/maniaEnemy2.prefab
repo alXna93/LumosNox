@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50614806458378384}
   - component: {fileID: 95859119654816058}
   - component: {fileID: 114737574069399018}
+  - component: {fileID: 114880458675684166}
   m_Layer: 8
   m_Name: maniaEnemy2
   m_TagString: enemy
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1311383475082038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.6725755, y: -0.3, z: 0}
+  m_LocalPosition: {x: -5.5348277, y: 4.691216, z: 0}
   m_LocalScale: {x: 0.73215985, y: 0.7322435, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -108,18 +109,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99dd56bd68488a54ba2403a4e488a63f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: {fileID: 11400000, guid: 1d3a49bfd25162240bd45acc078389f9, type: 2}
   currentState: 0
-  health: 15
+  health: 0
   enemyName: Mania1
-  baseAttack: 5
   EnemySpeed: 3
-  destroyEnemy: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 1
   homePosition: {fileID: 0}
   myAnim: {fileID: 0}
   myRigidbody: {fileID: 0}
+--- !u!114 &114880458675684166
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1311383475082038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e90ca38a3a92e46ab43be535f4e756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 2
+  knockTime: 0.2
+  damage: 1
 --- !u!212 &212958565018368022
 SpriteRenderer:
   m_ObjectHideFlags: 1
