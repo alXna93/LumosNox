@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 746801380}
   - component: {fileID: 746801379}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: quitGameButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -224,8 +224,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 67, y: -339}
-  m_SizeDelta: {x: 521.9, y: 128}
+  m_AnchoredPosition: {x: 67, y: -290.8999}
+  m_SizeDelta: {x: 521.9, y: 224.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &746801379
 MonoBehaviour:
@@ -537,7 +537,7 @@ GameObject:
   - component: {fileID: 1623138552}
   - component: {fileID: 1623138551}
   m_Layer: 5
-  m_Name: Button
+  m_Name: newGameButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -645,8 +645,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68, y: -49}
-  m_SizeDelta: {x: 537, y: 128}
+  m_AnchoredPosition: {x: 68, y: 2}
+  m_SizeDelta: {x: 537, y: 230}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1656162474
 GameObject:
