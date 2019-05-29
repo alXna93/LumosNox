@@ -5,13 +5,13 @@ using UnityEngine;
 public class DialogActivator : Interactables {
 
     public string[] lines;
-    private bool canActivate;
+    
     
    
 
     // Use this for initialization
     void Start () {
-		
+        canActivate = false;
 	}
 	
 	// Update is called once per frame
@@ -20,18 +20,10 @@ public class DialogActivator : Interactables {
         {
             DialogueManager.instance.ShowDialog(lines, isPerson);
         }
+       
+           
 	}
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-     
-            if (other.tag == "Player" && !other.isTrigger)
-            {
-                clue.Raise();
-                isPerson = false;
-                canActivate = false;
-            }
-    }
 
 
 

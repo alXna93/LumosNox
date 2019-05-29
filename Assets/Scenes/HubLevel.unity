@@ -1111,7 +1111,12 @@ Prefab:
         type: 2}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 1091781662}
+      objectReference: {fileID: 1167103965}
+    - target: {fileID: 223612219806892618, guid: c290710241d254a48936ce3b8616cba3,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c290710241d254a48936ce3b8616cba3, type: 2}
   m_IsPrefabAsset: 0
@@ -1194,12 +1199,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1091781662 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114399140383537692, guid: 9ee6268f4497eae4d9bbbb7e6f4ca028,
-    type: 2}
-  m_PrefabInternal: {fileID: 150587474}
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1107750002
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,6 +1316,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1167103965 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114386025396368398, guid: c290710241d254a48936ce3b8616cba3,
+    type: 2}
+  m_PrefabInternal: {fileID: 807002798}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!4 &1209794394 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4643784359362334, guid: 8c717a50d4df3404bb7f28f2abf618cd,
@@ -11827,7 +11832,7 @@ Prefab:
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
       propertyPath: lines.Array.data[1]
-      value: test
+      value: test 1
       objectReference: {fileID: 0}
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
@@ -11837,7 +11842,7 @@ Prefab:
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}
       propertyPath: lines.Array.data[3]
-      value: test
+      value: test 2
       objectReference: {fileID: 0}
     - target: {fileID: 114739130547503062, guid: 8c717a50d4df3404bb7f28f2abf618cd,
         type: 2}

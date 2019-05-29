@@ -6,19 +6,9 @@ public class Interactables : MonoBehaviour {
 
     public bool isPerson = true;
     public Signal clue;
+    protected bool canActivate;
 
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -26,6 +16,7 @@ public class Interactables : MonoBehaviour {
         {
             clue.Raise();        
             isPerson = true;
+            canActivate = true;
        
         }
     }
@@ -35,7 +26,8 @@ public class Interactables : MonoBehaviour {
         if (other.tag == "Player" && !other.isTrigger)
         {
             clue.Raise();
-            isPerson = false;     
+            isPerson = false;
+            canActivate = false;
         }
     }
 }
