@@ -30,15 +30,15 @@ public class HeartManager : MonoBehaviour {
     //update heart on UI by going through the players health
     public void UpdateHearts()
     {
-        float tempHealth = playerCurrentHealth.initialValue / 2;
+        float tempHealth = playerCurrentHealth.RuntimeValue / 2;
         for (int i = 0; i < heartContainers.initialValue; i++)
         {
-            if (i <= tempHealth)
+            if (i <= tempHealth - 1)
             {
                 //full heart
                 hearts[i].sprite = fullHeart;
             }
-            else if(i > tempHealth)
+            else if(i >= tempHealth)
                 {
                 //empty heart
                 hearts[i].sprite = emptyHeart;
