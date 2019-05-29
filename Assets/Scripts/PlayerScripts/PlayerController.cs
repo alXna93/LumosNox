@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour {
     public float moveSpeed;
     public Vector3 change;
     public Animator myAnim;
+    public FloatValue currentHealth;
+    public Signal playerHealthSignal;
 
     public static PlayerController instance;
 
@@ -106,9 +108,16 @@ public class PlayerController : MonoBehaviour {
         theRB.MovePosition(transform.position + change * moveSpeed * Time.deltaTime);
     }
 
-    public void Knock(float knockTime)
+    public void Knock(float knockTime, float damage)
     {
-        StartCoroutine(KnockCo(knockTime));
+        currentHealth.initialValue -= damage;
+        if (currentHealth.initialValue > 0)
+        {
+            playerHealthSignal.Raise();
+            StartCoroutine(KnockCo(knockTime));
+        }
+
+        
     }
 
     private IEnumerator KnockCo(float knockTime)
