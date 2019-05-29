@@ -163,12 +163,12 @@ MonoBehaviour:
   currentState: 0
   health: 0
   enemyName: Patrol Mania
-  EnemySpeed: 3
+  EnemySpeed: 2
   baseAttack: 0
   deathEffect: {fileID: 1444411973673606, guid: 5c611030222dd084da97d40f8d726101,
     type: 2}
   target: {fileID: 0}
-  chaseRadius: 4
+  chaseRadius: 3
   attackRadius: 1
   homePosition: {fileID: 0}
   myAnim: {fileID: 0}
@@ -204,12 +204,12 @@ MonoBehaviour:
   currentState: 0
   health: 0
   enemyName: Patrol Mania
-  EnemySpeed: 3
+  EnemySpeed: 2
   baseAttack: 0
   deathEffect: {fileID: 1444411973673606, guid: 5c611030222dd084da97d40f8d726101,
     type: 2}
   target: {fileID: 0}
-  chaseRadius: 4
+  chaseRadius: 3
   attackRadius: 1
   homePosition: {fileID: 0}
   myAnim: {fileID: 0}
@@ -220,8 +220,8 @@ MonoBehaviour:
   currentPoint: 0
   currentGoal: {fileID: 0}
   roundingDistance: 0.2
---- !u!58 &153941696
-CircleCollider2D:
+--- !u!61 &153941696
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -232,9 +232,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.20088296}
+  m_Offset: {x: -0.022446841, y: 0.10036683}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6875, y: 2.5625}
+    newSize: {x: 1.6875, y: 2.5625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.1015357
+  m_Size: {x: 2.0017667, y: 2.3617663}
+  m_EdgeRadius: 0
 --- !u!1001 &163796272
 Prefab:
   m_ObjectHideFlags: 0
@@ -289,6 +299,16 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114737574069399018, guid: 6376d3cef45bc124a8b5a1dd01b0e8cb,
+        type: 2}
+      propertyPath: EnemySpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114737574069399018, guid: 6376d3cef45bc124a8b5a1dd01b0e8cb,
+        type: 2}
+      propertyPath: chaseRadius
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6376d3cef45bc124a8b5a1dd01b0e8cb, type: 2}
   m_IsPrefabAsset: 0
@@ -297,8 +317,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1311383475082038, guid: 6376d3cef45bc124a8b5a1dd01b0e8cb,
     type: 2}
   m_PrefabInternal: {fileID: 163796272}
---- !u!58 &163796274
-CircleCollider2D:
+--- !u!61 &163796274
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -309,9 +329,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.20132703}
+  m_Offset: {x: 0.11221701, y: 0.112204075}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.1875, y: 3}
+    newSize: {x: 2.1875, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.2986729
+  m_Size: {x: 2.411934, y: 2.7755919}
+  m_EdgeRadius: 0
 --- !u!1001 &182594488
 Prefab:
   m_ObjectHideFlags: 0
@@ -516,8 +546,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4180162648563376, guid: 6376d3cef45bc124a8b5a1dd01b0e8cb,
     type: 2}
   m_PrefabInternal: {fileID: 1992055713}
---- !u!58 &571819255
-CircleCollider2D:
+--- !u!61 &571819255
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -528,9 +558,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.22520687}
+  m_Offset: {x: 0.08291668, y: 0.18654096}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.1875, y: 3}
+    newSize: {x: 2.1875, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.2747933
+  m_Size: {x: 2.519166, y: 2.626918}
+  m_EdgeRadius: 0
 --- !u!114 &571819261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,12 +586,12 @@ MonoBehaviour:
   currentState: 0
   health: 0
   enemyName: Patrol Mania
-  EnemySpeed: 3
+  EnemySpeed: 2
   baseAttack: 0
   deathEffect: {fileID: 1444411973673606, guid: 5c611030222dd084da97d40f8d726101,
     type: 2}
   target: {fileID: 0}
-  chaseRadius: 4
+  chaseRadius: 3
   attackRadius: 1
   homePosition: {fileID: 0}
   myAnim: {fileID: 0}
@@ -640,6 +680,16 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114517164775465384, guid: e5812086a696ac443b60107a64e28c69,
+        type: 2}
+      propertyPath: EnemySpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517164775465384, guid: e5812086a696ac443b60107a64e28c69,
+        type: 2}
+      propertyPath: chaseRadius
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5812086a696ac443b60107a64e28c69, type: 2}
   m_IsPrefabAsset: 0
@@ -648,8 +698,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1381438513470984, guid: e5812086a696ac443b60107a64e28c69,
     type: 2}
   m_PrefabInternal: {fileID: 687662287}
---- !u!58 &687662289
-CircleCollider2D:
+--- !u!61 &687662289
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -660,9 +710,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.24838017}
+  m_Offset: {x: 0.00000011920929, y: 0.16893023}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6875, y: 2.5625}
+    newSize: {x: 1.6875, y: 2.5625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.0590433
+  m_Size: {x: 1.9561708, y: 2.600041}
+  m_EdgeRadius: 0
 --- !u!1001 &735877020
 Prefab:
   m_ObjectHideFlags: 0
@@ -5697,6 +5757,16 @@ Prefab:
         type: 2}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114325040263989540, guid: 08c3f68d3ff98a943a0e843aceb49181,
+        type: 2}
+      propertyPath: EnemySpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114325040263989540, guid: 08c3f68d3ff98a943a0e843aceb49181,
+        type: 2}
+      propertyPath: chaseRadius
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08c3f68d3ff98a943a0e843aceb49181, type: 2}

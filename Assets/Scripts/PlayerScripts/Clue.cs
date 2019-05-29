@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Clue : MonoBehaviour {
 
-    public GameObject clue;
-    public bool clueActive = false;
+    public GameObject clue; //Clue question mark
+    public bool clueActive = false; 
 
-    public void ChangeClue()
+    public void ChangeClue() //If clue isnt equal to true, set it to true
     {
         clueActive = !clueActive;
         if(clueActive)

@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PatrolEnemy : DepressionEnemy
 {
-    public Transform[] path;
-    public int currentPoint;
-    public Transform currentGoal;
-    public float roundingDistance;
+    public Transform[] path; //2 point path
+    public int currentPoint; //current point enemy is at
+    public Transform currentGoal; //Point enemy is directing towards
+    public float roundingDistance; 
 
-    public override void CheckDistance()
+    public override void CheckDistance() //Check distance between enemy and player and change enemy state depending on distance
     {
         if (Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius)
         {
@@ -21,10 +21,12 @@ public class PatrolEnemy : DepressionEnemy
                 changeAnim(temp - transform.position);
                 myRigidbody.MovePosition(temp);
 
-                //ChangeState(EnemyState.walk);
+                
                 myAnim.SetBool("startWalking", true);
             }
         }
+
+        //If in chasing distance of player, move towards player
         else if (Vector3.Distance(target.position, transform.position) > chaseRadius)
         {
             if (Vector3.Distance(transform.position, path[currentPoint].position) > roundingDistance)
@@ -34,13 +36,15 @@ public class PatrolEnemy : DepressionEnemy
                 myRigidbody.MovePosition(temp);
             }
             else
+
+            // If following path and goal point reached, go to second point
             {
                 ChangeGoal();
             }
         }
     }
 
-    private void ChangeGoal()
+    private void ChangeGoal() //If enemy has got to first point, +1 to current point and move towards
     {
         if (currentPoint == path.Length - 1)
         {

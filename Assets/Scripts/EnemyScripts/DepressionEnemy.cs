@@ -31,7 +31,7 @@ public class DepressionEnemy : EnemyAI {
 
     }
 
-    public virtual void CheckDistance()
+    public virtual void CheckDistance() //Check distance between enemy and player and change enemy state depending on distance and change state
     {
         if (Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius) 
         {
@@ -46,7 +46,10 @@ public class DepressionEnemy : EnemyAI {
                 ChangeState(EnemyState.walk);
                 myAnim.SetBool("startWalking", true);
             }
-        } else if (Vector3.Distance(target.position, transform.position) > chaseRadius)
+            
+        }
+        //If player isn within radius, begin walking state
+        else if (Vector3.Distance(target.position, transform.position) > chaseRadius)
         {
             myAnim.SetBool("startWalking", false);
         }
@@ -58,7 +61,7 @@ public class DepressionEnemy : EnemyAI {
         myAnim.SetFloat("moveY", setVector.y);
     }
 
-    public void changeAnim(Vector2 direction)
+    public void changeAnim(Vector2 direction) //Change animation depending on direction
     {
         if(Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
@@ -85,7 +88,7 @@ public class DepressionEnemy : EnemyAI {
         }
     }
 
-    private void ChangeState(EnemyState newState)
+    private void ChangeState(EnemyState newState) //If current state isnt equal to new state then make current state, new state
     {
 
         if(currentState != newState)

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class EssentialsLoader : MonoBehaviour {
 
-    public GameObject UIScreen;
+
+    
+    public GameObject UIScreen; 
     public GameObject player;
     public GameObject gameMan;
 

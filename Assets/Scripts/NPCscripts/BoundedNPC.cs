@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class BoundedNPC : MonoBehaviour {
 
+    //Movement script for NPC with bounds in HubLevel
     private Vector3 directionVector;
     private Transform myTransform;
     public float speed;
     private Rigidbody2D myRigidbody;
     private Animator myAnim;
     public Collider2D bounds;
-    private bool isMoving;
-    public bool playerInRange;
+    private bool isMoving; //Is the NPC moving
+    public bool playerInRange; 
     public float minMoveTime;
     public float maxMoveTime;
     private float moveTimeSeconds;
@@ -63,20 +64,20 @@ public class BoundedNPC : MonoBehaviour {
         
 	}
 
-    private void ChooseDifferentDirection()
+    private void ChooseDifferentDirection() //Make direction appear to be more random
     {
         Vector3 temp = directionVector;
         ChangeDirection();
         int loops = 0;
         while (temp == directionVector && loops < 100)
         {
-            loops++;
-            ChangeDirection();
+            loops++; //Dont get into an infinite loop
+            ChangeDirection(); //Change direction
         }
 
     }
 
-    private void Move()
+    private void Move() //Move the NPC 
     {
         Vector3 temp = myTransform.position + directionVector * speed * Time.deltaTime;
         if (bounds.bounds.Contains(temp))
@@ -89,7 +90,7 @@ public class BoundedNPC : MonoBehaviour {
         }
     }
 
-    void ChangeDirection()
+    void ChangeDirection() //Change the direction by using 4 different cases, one for each direction
     {
         int direction = Random.Range(0, 4);
         switch (direction)
@@ -123,12 +124,12 @@ public class BoundedNPC : MonoBehaviour {
         myAnim.SetFloat("moveY", directionVector.y);
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D other) //If NPC collides start moving again in different direction
     {
         ChooseDifferentDirection();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other) //If colliding with player then player in range = true
     {
         if (other.CompareTag("Player") && other.isTrigger)
         {
@@ -137,7 +138,7 @@ public class BoundedNPC : MonoBehaviour {
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other) //When player isnt in range anymore
     {
         if (other.CompareTag("Player") && other.isTrigger)
         {

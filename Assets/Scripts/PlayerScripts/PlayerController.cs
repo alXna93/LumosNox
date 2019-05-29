@@ -13,7 +13,7 @@ public enum PlayerState
 
 public class PlayerController : MonoBehaviour {
 
-
+    //Player variables
     public PlayerState currentState;
     public Rigidbody2D theRB;
     public float moveSpeed;
@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour {
 
     public static PlayerController instance;
 
+    private sfxManager sfxMan;
 
     public string areaTransitionName;
 
@@ -36,6 +37,8 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+        //Set instance to player character
         if (instance == null)
         {
             instance = this;
@@ -45,28 +48,33 @@ public class PlayerController : MonoBehaviour {
         {
             if (instance != this)
             {
-                Destroy(gameObject);
+                Destroy(gameObject); //Destroy instance if there is more than one
             }
         }
 
-        DontDestroyOnLoad(gameObject);
-        currentState = PlayerState.walk;
-        myAnim.SetFloat("moveX", 0);
-        myAnim.SetFloat("moveY", -1);
-	}
+        DontDestroyOnLoad(gameObject); //Dont destroy player character when loading into new level
+        currentState = PlayerState.walk; //Set players initial state
+        sfxMan = FindObjectOfType<sfxManager>();
+        myAnim.SetFloat("moveX", 0); // X value for animator
+        myAnim.SetFloat("moveY", -1); // Y value for animator
+    }
 
 
     // Update is called once per frame
     void Update() {
 
-        change = Vector3.zero;
-        change.x = Input.GetAxisRaw("Horizontal");
+        //Change player direction based on player input
+        change = Vector3.zero; 
+        change.x = Input.GetAxisRaw("Horizontal"); 
         change.y = Input.GetAxisRaw("Vertical");
+
+        //Check if player is attacking and if they are change player state and run coroutine
         if (Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger) 
         {
             StartCoroutine(AttackCo());
 
         }
+        //If the player isnt attacking, update animation and move player
         else if (currentState == PlayerState.walk || currentState == PlayerState.idle)
         {
             UpdateAnimationAndMove();
@@ -77,17 +85,18 @@ public class PlayerController : MonoBehaviour {
 
     }
 
-    private IEnumerator AttackCo()
+    private IEnumerator AttackCo() //Attacking coroutine
     {
-        myAnim.SetBool("attacking", true);
-        currentState = PlayerState.attack;
+        myAnim.SetBool("attacking", true); //Set animation for attacking
+        currentState = PlayerState.attack; //Set updated player state
+        sfxMan.playerAttack.Play(); //Play attacking sound effect
         yield return null;
-        myAnim.SetBool("attacking", false);
+        myAnim.SetBool("attacking", false); //Player stopped attacking
         yield return new WaitForSeconds(.3f);
-        currentState = PlayerState.walk;
+        currentState = PlayerState.walk; //Return to walk state
     }
 
-    void UpdateAnimationAndMove()
+    void UpdateAnimationAndMove() //Update the animator depending on direction
     {
         if (change != Vector3.zero)
         {
@@ -104,30 +113,33 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    void MoveCharacter()
+    void MoveCharacter() //Move player in given direction
     {
         change.Normalize();
         theRB.MovePosition(transform.position + change * moveSpeed * Time.deltaTime);
     }
 
-    public void Knock(float knockTime, float damage)
+    public void Knock(float knockTime, float damage) 
     {
+
+        //Set player health by reducing it by the knockback damage dealth by enemy
+
         currentHealth.RuntimeValue -= damage;
         playerHealthSignal.Raise();
         if (currentHealth.RuntimeValue > 0)
         {
            
-            StartCoroutine(KnockCo(knockTime));
+            StartCoroutine(KnockCo(knockTime)); //start knockback coroutine
         }
         else
         {
-            this.gameObject.SetActive(false);
+            this.gameObject.SetActive(false); //if player has 0 health, set instance to false
         }
 
         
     }
 
-    private IEnumerator KnockCo(float knockTime)
+    private IEnumerator KnockCo(float knockTime) //Coroutine for player rigidbody after knockback
     {
         if (theRB != null)
         {
@@ -141,7 +153,7 @@ public class PlayerController : MonoBehaviour {
 
 
 
-    public void SetBounds(
+    public void SetBounds( //Bounds for player in level
             Vector3 botLeft, Vector3 topRight) { 
 
             BottomLeftLimit = botLeft + new Vector3(.5f, 1f, 0f);

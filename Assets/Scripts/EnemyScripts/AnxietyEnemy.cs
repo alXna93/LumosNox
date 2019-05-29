@@ -5,16 +5,18 @@ using UnityEngine;
 public class AnxietyEnemy : EnemyAI {
 
 
-    public Transform target;
-    public float chaseRadius;
-    public float attackRadius;
-    public Transform homePosition;
-    public Animator myAnim;
-    public Rigidbody2D myRigidbody;
+    public Transform target; //Target enemy will move toward
+    public float chaseRadius; //Radius to figure out when to chase
+    public float attackRadius; //Attacking radius
+    public Transform homePosition; //Original position before chasing begain
+    public Animator myAnim; //my animation
+    public Rigidbody2D myRigidbody; //enemy rigidbody
 
 
     // Use this for initialization
     void Start()
+        
+        //Starting values, set state to idle, find player by its tag and transform to their position
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         currentState = EnemyState.idle;
@@ -30,7 +32,7 @@ public class AnxietyEnemy : EnemyAI {
 
     }
 
-    void CheckDistance()
+    void CheckDistance() //Check distance between enemy and player and change enemy state depending on distance and change state
     {
         if (Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius)
         {
@@ -46,6 +48,8 @@ public class AnxietyEnemy : EnemyAI {
                 myAnim.SetBool("startWalking", true);
             }
         }
+
+        //If player isn within radius, begin walking state
         else if (Vector3.Distance(target.position, transform.position) > chaseRadius)
         {
             myAnim.SetBool("startWalking", false);
@@ -58,7 +62,7 @@ public class AnxietyEnemy : EnemyAI {
         myAnim.SetFloat("moveY", setVector.y);
     }
 
-    private void changeAnim(Vector2 direction)
+    private void changeAnim(Vector2 direction) //Change animation depending on direction
     {
         if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
@@ -85,7 +89,7 @@ public class AnxietyEnemy : EnemyAI {
         }
     }
 
-    private void ChangeState(EnemyState newState)
+    private void ChangeState(EnemyState newState) //If current state isnt equal to new state then make current state, new state
     {
 
         if (currentState != newState)

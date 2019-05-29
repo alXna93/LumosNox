@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class Heart : PowerUp {
 
-    public FloatValue playerHealth;
-    public float amountToIncrease;
-    public FloatValue heartContainers;
+    public FloatValue playerHealth; //Value of players health
+    public float amountToIncrease; //How much to increase by
+    public FloatValue heartContainers; //Amount of hearts appearing on UI
+    private sfxManager sfxMan;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    // Use this for initialization
+    void Start () {
+        sfxMan = FindObjectOfType<sfxManager>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -19,6 +20,7 @@ public class Heart : PowerUp {
 	}
 
     public void OnTriggerEnter2D(Collider2D other)
+        //If player collides with a heart, add to player health, play effect and destory heart
     {
         if (other.CompareTag("Player") && !other.isTrigger)
         {
@@ -28,6 +30,7 @@ public class Heart : PowerUp {
                 playerHealth.initialValue = heartContainers.RuntimeValue * 2f;
             }
             powerUpSignal.Raise();
+            sfxMan.powerUpGain.Play();
             Destroy(this.gameObject);
         }
     }
