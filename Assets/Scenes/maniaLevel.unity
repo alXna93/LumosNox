@@ -140,6 +140,8 @@ MonoBehaviour:
   enemyName: Patrol Mania
   EnemySpeed: 3
   baseAttack: 0
+  deathEffect: {fileID: 1444411973673606, guid: 5c611030222dd084da97d40f8d726101,
+    type: 2}
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 1
@@ -179,6 +181,8 @@ MonoBehaviour:
   enemyName: Patrol Mania
   EnemySpeed: 3
   baseAttack: 0
+  deathEffect: {fileID: 1444411973673606, guid: 5c611030222dd084da97d40f8d726101,
+    type: 2}
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 1
@@ -234,6 +238,12 @@ Prefab:
       propertyPath: m_Name
       value: maniaEnemy2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114737574069399018, guid: 6376d3cef45bc124a8b5a1dd01b0e8cb,
+        type: 2}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 1444411973673606, guid: 5c611030222dd084da97d40f8d726101,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6376d3cef45bc124a8b5a1dd01b0e8cb, type: 2}
   m_IsPrefabAsset: 0
@@ -406,6 +416,8 @@ MonoBehaviour:
   enemyName: Patrol Mania
   EnemySpeed: 3
   baseAttack: 0
+  deathEffect: {fileID: 1444411973673606, guid: 5c611030222dd084da97d40f8d726101,
+    type: 2}
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 1
@@ -602,7 +614,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 983244788}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.88, y: 7.15, z: 0}
+  m_LocalPosition: {x: -1.97, y: -3.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 672608847}
@@ -5426,6 +5438,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114325040263989540, guid: 08c3f68d3ff98a943a0e843aceb49181,
+        type: 2}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 1444411973673606, guid: 5c611030222dd084da97d40f8d726101,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08c3f68d3ff98a943a0e843aceb49181, type: 2}
   m_IsPrefabAsset: 0
@@ -5521,7 +5539,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1911094269}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.88, y: 7.15, z: 0}
+  m_LocalPosition: {x: 9.66, y: -6.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 672608847}

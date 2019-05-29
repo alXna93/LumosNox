@@ -317,6 +317,8 @@ MonoBehaviour:
   enemyName: Patrol Depression
   EnemySpeed: 2
   baseAttack: 1
+  deathEffect: {fileID: 1444411973673606, guid: 5c611030222dd084da97d40f8d726101,
+    type: 2}
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 1
@@ -5306,6 +5308,8 @@ MonoBehaviour:
   enemyName: Patrol Depression
   EnemySpeed: 2
   baseAttack: 1
+  deathEffect: {fileID: 1444411973673606, guid: 5c611030222dd084da97d40f8d726101,
+    type: 2}
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 1
@@ -5388,6 +5392,8 @@ MonoBehaviour:
   enemyName: Patrol Depression
   EnemySpeed: 2
   baseAttack: 1
+  deathEffect: {fileID: 1444411973673606, guid: 5c611030222dd084da97d40f8d726101,
+    type: 2}
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 1

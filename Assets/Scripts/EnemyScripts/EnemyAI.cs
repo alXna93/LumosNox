@@ -18,6 +18,7 @@ public class EnemyAI : MonoBehaviour
     public string enemyName;   
     public float EnemySpeed;
     public int baseAttack;
+    public GameObject deathEffect;
 
     private void Awake()
     {
@@ -29,7 +30,18 @@ public class EnemyAI : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
+            DeathEffect();
             this.gameObject.SetActive(false);
+        }
+    }
+
+    private void DeathEffect()
+    {
+        if (deathEffect != null)
+        {
+            GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 1f);
+                
         }
     }
     public void Knock(Rigidbody2D myRigidbody, float knockTime, float damage)
