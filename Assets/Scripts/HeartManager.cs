@@ -15,8 +15,11 @@ public class HeartManager : MonoBehaviour {
 
     public static HeartManager instance;
 
+    private FloatValue health;
+
     // Use this for initialization
     void Start () {
+        health = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().currentHealth;
         InitHearts();
 	}
 	
@@ -32,7 +35,7 @@ public class HeartManager : MonoBehaviour {
     //update heart on UI by going through the players health
     public void UpdateHearts()
     {
-        float tempHealth = playerCurrentHealth.RuntimeValue / 2;
+        float tempHealth = health.RuntimeValue / 2;
         for (int i = 0; i < heartContainers.initialValue; i++)
         {
             if (i <= tempHealth - 1)

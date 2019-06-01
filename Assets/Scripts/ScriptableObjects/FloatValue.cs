@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class FloatValue : ScriptableObject, ISerializationCallbackReceiver {
 
+    //float value for intital player health 
     public float initialValue;
 
     [HideInInspector]

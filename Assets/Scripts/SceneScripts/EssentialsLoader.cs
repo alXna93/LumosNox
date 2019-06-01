@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EssentialsLoader : MonoBehaviour {
 
-
+    //Holds the essentials for every level
     
     public GameObject UIScreen; 
     public GameObject player;
@@ -15,13 +15,13 @@ public class EssentialsLoader : MonoBehaviour {
 		if (UIFade.instance == null)
         {
 
-            UIFade.instance = Instantiate(UIScreen).GetComponent<UIFade>();
+            UIFade.instance = Instantiate(UIScreen).GetComponent<UIFade>(); //fading screen
 
         }
 
         if (PlayerController.instance == null)
         {
-            PlayerController clone = Instantiate(player).GetComponent<PlayerController>();
+            PlayerController clone = Instantiate(player).GetComponent<PlayerController>(); // initialise player character
             PlayerController.instance = clone;
         }
 

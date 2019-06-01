@@ -67,6 +67,9 @@ public class PlayerController : MonoBehaviour {
        
         myAnim.SetFloat("moveX", 0); // X value for animator
         myAnim.SetFloat("moveY", -1); // Y value for animator
+
+        currentHealth.RuntimeValue = 8.0f;
+        playerHealthSignal.Raise();
     }
 
 

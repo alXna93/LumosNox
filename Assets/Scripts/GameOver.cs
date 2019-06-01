@@ -28,7 +28,7 @@ public class GameOver : MonoBehaviour {
         SceneManager.LoadScene("startMenu");
     }
 
-    public void RestartGame()
+    public void RestartGame() //Restart to hub level scene
     {
         Destroy(GameManager.instance.gameObject);
         Destroy(PlayerController.instance.gameObject);
