@@ -35,7 +35,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4293543496894530}
-  - component: {fileID: 114325996338124536}
   m_Layer: 0
   m_Name: PlayerStats
   m_TagString: Untagged
@@ -81,33 +80,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b54fa6fc6d9eb4eb96aca29b803836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charStats: {fileID: 114325996338124536}
-  gameMenuOpen: 0
   dialogActive: 0
   fadingBetweenScenes: 0
---- !u!114 &114325996338124536
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1948551933335546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 464f1c6767fb2b84888956259ee7e4cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerName: Lenna
-  playerLevel: 1
-  currentEXP: 0
-  expToNextLevel: 0000000000000000000000000000000000000000
-  maxLevel: 5
-  startEXP: 500
-  currentHP: 50
-  maxHP: 100
-  currentPower: 0
-  maxPower: 30
-  powerLvlBonus: 00000000050000000a0000000f00000014000000
-  strength: 15
-  defence: 10
-  armourPower: 0
-  playerImage: {fileID: 21300000, guid: 5fed3153c02692340bf2efa272fbb59c, type: 3}

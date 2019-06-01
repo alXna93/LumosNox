@@ -41,7 +41,6 @@ GameObject:
   - component: {fileID: 114892067205527370}
   - component: {fileID: 114872729885499132}
   - component: {fileID: 114734578605579474}
-  - component: {fileID: 114558590835499664}
   m_Layer: 5
   m_Name: UI Canvas 1 1
   m_TagString: Untagged
@@ -493,17 +492,6 @@ MonoBehaviour:
   heartContainers: {fileID: 11400000, guid: 7a1ca8d6436f7ff4bbc0117cffb63465, type: 2}
   playerCurrentHealth: {fileID: 11400000, guid: f0105632df1cf144989bde122bc730cb,
     type: 2}
---- !u!114 &114558590835499664
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1123263798997092}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5c46f5e5d2314c48816bd09333eb09a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114579420544947012
 MonoBehaviour:
   m_ObjectHideFlags: 1
