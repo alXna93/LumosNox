@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour {
     public Animator myAnim;
     public FloatValue currentHealth;
     public Signal playerHealthSignal;
+    
 
     public static PlayerController instance;
 
@@ -35,11 +36,16 @@ public class PlayerController : MonoBehaviour {
 
     public bool canMove = true;
     public float waitToReload;
-   
+
    
 
-	// Use this for initialization
-	void Start () {
+
+
+
+
+
+    // Use this for initialization
+    void Start () {
 
         //Set instance to player character
         if (instance == null)
@@ -164,10 +170,9 @@ public class PlayerController : MonoBehaviour {
     private IEnumerator PlayerDead()
     {
         sfxMan.playerDeath.Play(); //Play attacking sound effect
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(.5f);
         SceneManager.LoadScene("gameOver");
-     
-
+        
 
     }
 

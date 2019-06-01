@@ -9,8 +9,8 @@ public class GameManager : MonoBehaviour {
 
     
 
-    public bool gameMenuOpen, dialogActive, fadingBetweenScenes, gameEnded;
-    public float restartDelay = 1f;
+    public bool dialogActive, fadingBetweenScenes;
+   
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (gameMenuOpen || dialogActive || fadingBetweenScenes)
+        if (dialogActive || fadingBetweenScenes)
         {
             PlayerController.instance.canMove = false;
         }

@@ -19,5 +19,10 @@ public class startMenu : MonoBehaviour {
     {
         SceneManager.LoadScene("HubLevel");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
   
 }

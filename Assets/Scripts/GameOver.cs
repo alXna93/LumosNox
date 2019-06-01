@@ -7,9 +7,10 @@ public class GameOver : MonoBehaviour {
 
     public string mainMenuScene;
     public string loadGameScene;
+    public GameObject player;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         PlayerController.instance.gameObject.SetActive(false);
         
 	}
@@ -34,6 +35,7 @@ public class GameOver : MonoBehaviour {
        
 
         SceneManager.LoadScene("HubLevel");
+        
 
     }
 }

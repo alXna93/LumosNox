@@ -903,6 +903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenuScene: startMenu
   loadGameScene: HubLevel
+  player: {fileID: 0}
 --- !u!1001 &1832146253
 Prefab:
   m_ObjectHideFlags: 0
