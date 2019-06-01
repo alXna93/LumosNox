@@ -19,8 +19,5 @@ public class startMenu : MonoBehaviour {
     {
         SceneManager.LoadScene("HubLevel");
     }
-    public void QuitGame() //If player clicks on quit, quit the application
-    {
-        Application.Quit();
-    }
+  
 }

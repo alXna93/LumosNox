@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public enum PlayerState
@@ -9,6 +10,7 @@ public enum PlayerState
     attack,
     stagger,
     idle
+    
 }
 
 public class PlayerController : MonoBehaviour {
@@ -32,7 +34,8 @@ public class PlayerController : MonoBehaviour {
     private Vector3 TopRightLimit;
 
     public bool canMove = true;
-  
+    public float waitToReload;
+   
    
 
 	// Use this for initialization
@@ -55,6 +58,7 @@ public class PlayerController : MonoBehaviour {
         DontDestroyOnLoad(gameObject); //Dont destroy player character when loading into new level
         currentState = PlayerState.walk; //Set players initial state
         sfxMan = FindObjectOfType<sfxManager>();
+       
         myAnim.SetFloat("moveX", 0); // X value for animator
         myAnim.SetFloat("moveY", -1); // Y value for animator
     }
@@ -83,6 +87,7 @@ public class PlayerController : MonoBehaviour {
         // Camera following player
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, BottomLeftLimit.x, TopRightLimit.x), Mathf.Clamp(transform.position.y, BottomLeftLimit.y, TopRightLimit.y), transform.position.z);
 
+       
     }
 
     private IEnumerator AttackCo() //Attacking coroutine
@@ -111,6 +116,8 @@ public class PlayerController : MonoBehaviour {
         {
             myAnim.SetBool("moving", false);
         }
+
+      
     }
 
     void MoveCharacter() //Move player in given direction
@@ -133,7 +140,11 @@ public class PlayerController : MonoBehaviour {
         }
         else
         {
-            this.gameObject.SetActive(false); //if player has 0 health, set instance to false
+            
+            StartCoroutine(PlayerDead());
+            
+
+
         }
 
         
@@ -150,7 +161,15 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    private IEnumerator PlayerDead()
+    {
+        sfxMan.playerDeath.Play(); //Play attacking sound effect
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene("gameOver");
+     
 
+
+    }
 
 
     public void SetBounds( //Bounds for player in level

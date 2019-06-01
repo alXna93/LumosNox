@@ -1,15 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
     public static GameManager instance;
 
-    //public PlayerStats charStats;
-
-    public bool gameMenuOpen, dialogActive, fadingBetweenScenes;
     
+
+    public bool gameMenuOpen, dialogActive, fadingBetweenScenes, gameEnded;
+    public float restartDelay = 1f;
 
 	// Use this for initialization
 	void Start () {
@@ -19,15 +20,20 @@ public class GameManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(gameMenuOpen || dialogActive || fadingBetweenScenes)
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (gameMenuOpen || dialogActive || fadingBetweenScenes)
         {
             PlayerController.instance.canMove = false;
-        } else
+        }
+        else
         {
             PlayerController.instance.canMove = true;
         }
-	}
+
+    }
+
+   
 }

@@ -13,8 +13,10 @@ public class HeartManager : MonoBehaviour {
     public FloatValue heartContainers;
     public FloatValue playerCurrentHealth;
 
-	// Use this for initialization
-	void Start () {
+    public static HeartManager instance;
+
+    // Use this for initialization
+    void Start () {
         InitHearts();
 	}
 	

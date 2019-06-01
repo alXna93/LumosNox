@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/maniaLevel.unity
     guid: e609ffce3e8759d4e8f377a73024ad63
+  - enabled: 1
+    path: Assets/Scenes/gameOver.unity
+    guid: 2e05db02b43885a448daa17ae4e408d9
   m_configObjects: {}

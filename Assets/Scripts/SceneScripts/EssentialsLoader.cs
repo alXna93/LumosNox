@@ -9,7 +9,7 @@ public class EssentialsLoader : MonoBehaviour {
     public GameObject UIScreen; 
     public GameObject player;
     public GameObject gameMan;
-
+    
 	// Use this for initialization
 	void Start () {
 		if (UIFade.instance == null)
@@ -28,7 +28,9 @@ public class EssentialsLoader : MonoBehaviour {
         {
             Instantiate(gameMan);
         }
-	}
+
+       
+    }
 	
 	// Update is called once per frame
 	void Update () {

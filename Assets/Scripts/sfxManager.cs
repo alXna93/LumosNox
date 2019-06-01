@@ -7,6 +7,7 @@ public class sfxManager : MonoBehaviour {
     public AudioSource playerAttack; //attacing sound
     public AudioSource powerUpGain; //Heart collected sound
     public AudioSource enemyDeath; //enemy death sound
+    public AudioSource playerDeath; //player death sound
 
     private static bool sfxManExists;
 

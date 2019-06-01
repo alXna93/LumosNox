@@ -14,10 +14,12 @@ public class CameraController : MonoBehaviour {
 
     private float halfHeight;
     private float halfWidth;
+    
+    
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 
         //target = PlayerController.instance.transform;
 
@@ -31,11 +33,14 @@ public class CameraController : MonoBehaviour {
 
         PlayerController.instance.SetBounds(theMap.localBounds.min, theMap.localBounds.max);
 
-	}
+      
+
+    }
 	
 	// LateUpdate is called once per frame after update
 	void LateUpdate () {
-
+        
+      
         transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
 
         //keep camera inside bounds
