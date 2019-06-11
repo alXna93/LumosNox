@@ -17,7 +17,9 @@ public class PlayerController : MonoBehaviour {
 
     //Player variables
     public PlayerState currentState;
-    public Rigidbody2D theRB;
+
+    [SerializeField]
+    private Rigidbody2D theRB;
     public float moveSpeed;
     public Vector3 change;
     public Animator myAnim;
