@@ -7,6 +7,7 @@ public class AreaExit : MonoBehaviour {
 
 
     public string areaToLoad;
+    private GameObject[] enemy;
 
     public string areaTransitionName;
 
@@ -17,7 +18,7 @@ public class AreaExit : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        theEntrance.transitionName = areaTransitionName;
+        theEntrance.transitionName = areaTransitionName;        
 	}
 	
 	// Update is called once per frame
@@ -37,7 +38,8 @@ public class AreaExit : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        enemy = GameObject.FindGameObjectsWithTag("enemy"); //array of current enemies
+        if (other.tag == "Player" && enemy.Length <=0)
         {
             //SceneManager.LoadScene(areaToLoad);
             shouldLoadAfterFade = true;

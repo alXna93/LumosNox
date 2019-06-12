@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -150,6 +150,7 @@ MonoBehaviour:
   clue: {fileID: 11400000, guid: f785be799699a244da78267bcc0e98e0, type: 2}
   lines:
   - Attack your Anxiety
+  exit: {fileID: 1512499516}
 --- !u!61 &59596729
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -590,11 +591,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4853274763799254, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 6.57
+      value: 11.32
       objectReference: {fileID: 0}
     - target: {fileID: 4853274763799254, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 6.13
+      value: 1.63
       objectReference: {fileID: 0}
     - target: {fileID: 4853274763799254, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.z
@@ -654,9 +655,22 @@ Prefab:
       propertyPath: areaTransitionName
       value: level-3
       objectReference: {fileID: 0}
+    - target: {fileID: 4853274763799254, guid: 5843d716198270246821b767411e9d29, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2.7889874
+      objectReference: {fileID: 0}
+    - target: {fileID: 1250197895158670, guid: 5843d716198270246821b767411e9d29, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5843d716198270246821b767411e9d29, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &482986972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1250197895158670, guid: 5843d716198270246821b767411e9d29,
+    type: 2}
+  m_PrefabInternal: {fileID: 1583305231}
 --- !u!1001 &494046143
 Prefab:
   m_ObjectHideFlags: 0
@@ -1220,6 +1234,7 @@ MonoBehaviour:
   clue: {fileID: 11400000, guid: f785be799699a244da78267bcc0e98e0, type: 2}
   lines:
   - Shut out the Mania
+  exit: {fileID: 1723108672}
 --- !u!61 &767587215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1531,6 +1546,7 @@ MonoBehaviour:
   clue: {fileID: 11400000, guid: f785be799699a244da78267bcc0e98e0, type: 2}
   lines:
   - Demon of Depression
+  exit: {fileID: 482986972}
 --- !u!61 &792715060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1840,6 +1856,7 @@ MonoBehaviour:
   - Anxiety, silently crippling you wherever you go..
   - And lastly..depression, the demon that can turn your life upside down in and instant.
   - Defeat these demons and finally find yourself free to move on and have a future..
+  exit: {fileID: 0}
 --- !u!61 &993765858
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2300,6 +2317,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1512499516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1250197895158670, guid: 5843d716198270246821b767411e9d29,
+    type: 2}
+  m_PrefabInternal: {fileID: 1659678223}
 --- !u!4 &1553890680 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4643784359362334, guid: 8c717a50d4df3404bb7f28f2abf618cd,
@@ -2314,11 +2336,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4853274763799254, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.33
+      value: 6.35
       objectReference: {fileID: 0}
     - target: {fileID: 4853274763799254, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -9.19
+      value: -8.53
       objectReference: {fileID: 0}
     - target: {fileID: 4853274763799254, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2374,6 +2396,10 @@ Prefab:
         type: 2}
       propertyPath: areaTransitionName
       value: level-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853274763799254, guid: 5843d716198270246821b767411e9d29, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2.6719873
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5843d716198270246821b767411e9d29, type: 2}
@@ -2513,11 +2539,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4853274763799254, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -11.98
+      value: -9.517
       objectReference: {fileID: 0}
     - target: {fileID: 4853274763799254, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.14
+      value: 3.528
       objectReference: {fileID: 0}
     - target: {fileID: 4853274763799254, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2568,6 +2594,14 @@ Prefab:
         type: 2}
       propertyPath: areaTransitionName
       value: level-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853274763799254, guid: 5843d716198270246821b767411e9d29, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.72501
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853274763799254, guid: 5843d716198270246821b767411e9d29, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2.5379858
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5843d716198270246821b767411e9d29, type: 2}
@@ -6696,6 +6730,11 @@ MonoBehaviour:
   thrust: 2
   knockTime: 0.2
   damage: 1
+--- !u!1 &1723108672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1250197895158670, guid: 5843d716198270246821b767411e9d29,
+    type: 2}
+  m_PrefabInternal: {fileID: 347634247}
 --- !u!1 &1724523194
 GameObject:
   m_ObjectHideFlags: 0
