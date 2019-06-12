@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -636,11 +636,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4123423118565542, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.53
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 4123423118565542, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.833
+      value: -2.06
       objectReference: {fileID: 0}
     - target: {fileID: 4123423118565542, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalScale.x
@@ -1268,7 +1268,7 @@ Transform:
   m_GameObject: {fileID: 767587213}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 8.45, y: 2.57, z: 5.877305}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.475, y: 1.1375, z: 1}
   m_Children: []
   m_Father: {fileID: 1500005296}
   m_RootOrder: 5
@@ -2368,7 +2368,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4123423118565542, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 9.85
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114315417234366544, guid: 5843d716198270246821b767411e9d29,
         type: 2}
@@ -2386,7 +2386,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4123423118565542, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 12.56
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1250197895158670, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_Name
@@ -2584,11 +2584,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4123423118565542, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.08
+      value: 4.63
       objectReference: {fileID: 0}
     - target: {fileID: 4123423118565542, guid: 5843d716198270246821b767411e9d29, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.49
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 114969665509385208, guid: 5843d716198270246821b767411e9d29,
         type: 2}
